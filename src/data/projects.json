@@ -1,24 +1,25 @@
 {"projects": [
     {
-      "id": "evolutek-robot",
+      "slug": "evolutek-robot",
       "title": "Robot Coupe de France",
-      "category": "robotics",
+      "category": "robotique",
+      "context": "association",
+      "dates": {
+        "year": 2025,
+        "start": "january",
+        "end": "december"
+      },
+      "status": "completed",
+      "duration": "8 mois",
       "thumbnail": "/src/assets/images/evolutek.jpg",
       "gallery": [
         "/src/assets/images/evolutek-1.jpg",
         "/src/assets/images/evolutek-2.jpg",
         "/src/assets/images/evolutek-3.jpg"
       ],
-      "tags": ["CATIA", "Mécanique", "ROS", "C/C++", "Linux"],
-      "status": "completed",
-      "context": "Association",
-      "dates": {
-        "start": "2024-09-01",
-        "end": "2025-06-15",
-        "duration": "8 mois"
-      },
-      "shortDescription": "Conception et programmation d'un robot autonome pour la Coupe de France de Robotique.",
-      "details": {
+      "snippet": "Conception et programmation d'un robot autonome pour la Coupe de France de Robotique.",
+      "skills": ["CATIA", "Mécanique", "ROS", "C/C++", "Linux"],
+      "description": {
         "contexte": {
           "show": true,
           "content": "Dans le cadre de l'association robotique de l'école, participation à la Coupe de France de Robotique - compétition nationale rassemblant plus de 200 équipes."
@@ -46,12 +47,15 @@
           "url": "https://github.com/...",
           "label": "GitHub"
         }
-      ],
-      "skills": [
-        { "name": "CATIA" },
-        { "name": "ROS" },
-        { "name": "C/C++" }
       ]
     }
-  ]
+  ], 
+  "categories": [
+        { "value": "all", "label": "Tous" },
+        { "value": "robotique", "label": "Robotique", "color": "#3B82F6" },
+        { "value": "iot", "label": "IoT", "color": "#10B981" },
+        { "value": "code", "label": "Code", "color": "#F59E0B" },
+        { "value": "devops", "label": "DevOps", "color": "#8B5CF6" },
+        { "value": "cao", "label": "CAO", "color": "#EC4899" }
+       ]
 }

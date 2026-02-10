@@ -2,19 +2,51 @@
   "skills": [
     {
       "name": "CATIA",
-      "category": "CAO",
+      "category": "software",
+      "type": "software",
       "icon": "catia-icon.svg",
-      "projectIds": ["evolutek-robot", "3d-printing"]
+      "projectSlugs": ["evolutek-robot", "3d-printing"],
+      "origin": ["school"]
     },
     {
-      "name": "Rust",
-      "category": "programming",
-      "icon": "rust-icon.svg",
-      "projectIds": ["rust-backend"]
+      "name": "ROS",
+      "category": "frameworks",
+      "type": "framework",
+      "icon": "ros-icon.svg",
+      "projectSlugs": ["evolutek-robot"],
+      "origin": ["school", "association"]
+    },
+    {
+      "name": "C/C++",
+      "category": "languages",
+      "type": "language",
+      "icon": "cpp-icon.svg",
+      "projectSlugs": ["evolutek-robot"],
+      "origin": ["school", "personal"]
+    },
+    {
+      "name": "Linux",
+      "category": "tools",
+      "type": "tool",
+      "icon": "linux-icon.svg",
+      "projectSlugs": ["evolutek-robot"],
+      "origin": ["school", "personal"]
+    },
+    {
+      "name": "Travail en équipe",
+      "category": "soft-skills",
+      "type": "soft-skill",
+      "icon": null,
+      "projectSlugs": ["evolutek-robot"],
+      "origin": ["school", "association"]
     }
   ],
-  "categories": {
-    "CAO": { "name": "CAO & Mécanique", "color": "#3B82F6" },
-    "programming": { "name": "Programmation", "color": "#10B981" }
-  }
+  "categories": [
+    { "value": "all", "label": "Toutes" },
+    { "value": "languages", "label": "Langages", "color": "#3B82F6" },
+    { "value": "tools", "label": "Outils", "color": "#10B981" },
+    { "value": "frameworks", "label": "Frameworks", "color": "#F59E0B" },
+    { "value": "software", "label": "Logiciels", "color": "#8B5CF6" },
+    { "value": "soft-skills", "label": "Soft Skills", "color": "#EC4899" }
+  ]
 }
