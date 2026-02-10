@@ -1,0 +1,8 @@
+{
+  "siteTitle": "TP",
+  "mainNav": [
+    { "id": "home", "label": "Accueil", "path": "/" },
+    { "id": "projects", "label": "Projets", "path": "/projects" },
+    { "id": "contact", "label": "Contact", "path": "/contact" }
+  ]
+}
