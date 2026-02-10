@@ -1,0 +1,57 @@
+{"projects": [
+    {
+      "id": "evolutek-robot",
+      "title": "Robot Coupe de France",
+      "category": "robotics",
+      "thumbnail": "/src/assets/images/evolutek.jpg",
+      "gallery": [
+        "/src/assets/images/evolutek-1.jpg",
+        "/src/assets/images/evolutek-2.jpg",
+        "/src/assets/images/evolutek-3.jpg"
+      ],
+      "tags": ["CATIA", "Mécanique", "ROS", "C/C++", "Linux"],
+      "status": "completed",
+      "context": "Association",
+      "dates": {
+        "start": "2024-09-01",
+        "end": "2025-06-15",
+        "duration": "8 mois"
+      },
+      "shortDescription": "Conception et programmation d'un robot autonome pour la Coupe de France de Robotique.",
+      "details": {
+        "contexte": {
+          "show": true,
+          "content": "Dans le cadre de l'association robotique de l'école, participation à la Coupe de France de Robotique - compétition nationale rassemblant plus de 200 équipes."
+        },
+        "challenge": {
+          "show": true,
+          "content": "Concevoir un robot autonome capable de réaliser des actions stratégiques sur un plateau de jeu, avec contraintes de taille, poids et sécurité."
+        },
+        "solution": {
+          "show": true,
+          "content": "Architecture ROS pour la navigation autonome, conception mécanique sur CATIA, programmation bas-niveau en C++ pour le contrôle moteur et les capteurs."
+        },
+        "results": {
+          "show": true,
+          "content": "Robot fonctionnel qualifié pour les phases finales. Score moyen de 85 points par match, dans le top 30 du classement national."
+        },
+        "competences": {
+          "show": true,
+          "content": "Maîtrise approfondie de ROS et de la conception mécanique assistée par ordinateur. Gestion d'équipe pluridisciplinaire."
+        }
+      },
+      "links": [
+        {
+          "type": "github",
+          "url": "https://github.com/...",
+          "label": "GitHub"
+        }
+      ],
+      "skills": [
+        { "name": "CATIA" },
+        { "name": "ROS" },
+        { "name": "C/C++" }
+      ]
+    }
+  ]
+}

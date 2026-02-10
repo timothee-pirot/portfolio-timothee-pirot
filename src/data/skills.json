@@ -1,0 +1,20 @@
+{
+  "skills": [
+    {
+      "name": "CATIA",
+      "category": "CAO",
+      "icon": "catia-icon.svg",
+      "projectIds": ["evolutek-robot", "3d-printing"]
+    },
+    {
+      "name": "Rust",
+      "category": "programming",
+      "icon": "rust-icon.svg",
+      "projectIds": ["rust-backend"]
+    }
+  ],
+  "categories": {
+    "CAO": { "name": "CAO & Mécanique", "color": "#3B82F6" },
+    "programming": { "name": "Programmation", "color": "#10B981" }
+  }
+}
