@@ -23,16 +23,23 @@ document.addEventListener('DOMContentLoaded', async () => {
   const appContainer = document.getElementById('app');
   
   // Définir les routes
-  router.addRoute('/', () => {
+  router.addRoute('/', async () => {
+    await homePage.init();
     appContainer.innerHTML = homePage.render();
+    homePage.attachEvents();
+    window.scrollTo(0, 0);
   });
   
-  router.addRoute('/projects', () => {
+  router.addRoute('/projects', async () => {
+    await projectsPage.init();
     appContainer.innerHTML = projectsPage.render();
+    projectsPage.attachEvents();
+    window.scrollTo(0, 0);
   });
   
   router.addRoute('/contact', () => {
     appContainer.innerHTML = contactPage.render();
+    window.scrollTo(0, 0);
   });
   
   // Déclencher la route initiale

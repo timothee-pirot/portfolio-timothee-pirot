@@ -1,15 +1,28 @@
+import hero from '../components/Hero.js';
+import featuredProjects from '../components/FeaturedProjects.js';
+import skillsSection from '../components/SkillsSection.js';
+import footer from '../components/Footer.js';
+
 class Home {
+  async init() {
+    await Promise.all([
+      featuredProjects.init(),
+      skillsSection.init()
+    ]);
+  }
+
   render() {
     return `
-      <div class="container mx-auto px-4 py-8">
-        <h1 class="text-4xl font-bold text-primary mb-4">
-          Bienvenue sur mon portfolio
-        </h1>
-        <p class="text-lg text-foreground">
-          Page d'accueil en construction... 🚧
-        </p>
-      </div>
+      ${hero.render()}
+      ${featuredProjects.render()}
+      ${skillsSection.render()}
+      ${footer.render()}
     `;
+  }
+
+  attachEvents() {
+    hero.attachEvents();
+    skillsSection.attachEvents();
   }
 }
 
