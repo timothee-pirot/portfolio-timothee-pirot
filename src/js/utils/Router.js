@@ -17,12 +17,53 @@ class Router {
   // Gérer le changement de route
   handleRoute() {
     const hash = window.location.hash.slice(1) || '/';
-    const route = this.routes[hash] || this.routes['/'];
     
-    if (route) {
+    // Chercher une route exacte
+    if (this.routes[hash]) {
       this.currentRoute = hash;
-      route();
+      this.routes[hash]();
+      return;
     }
+
+    // Chercher une route avec paramètres
+    for (const [path, handler] of Object.entries(this.routes)) {
+      const params = this.matchRoute(path, hash);
+      if (params) {
+        this.currentRoute = hash;
+        handler(params);
+        return;
+      }
+    }
+
+    // Route par défaut
+    if (this.routes['/']) {
+      this.currentRoute = '/';
+      this.routes['/']();
+    }
+  }
+
+  // Matcher une route avec paramètres (ex: /projects/:slug)
+  matchRoute(pattern, path) {
+    const patternParts = pattern.split('/');
+    const pathParts = path.split('/');
+
+    if (patternParts.length !== pathParts.length) {
+      return null;
+    }
+
+    const params = {};
+    for (let i = 0; i < patternParts.length; i++) {
+      if (patternParts[i].startsWith(':')) {
+        // C'est un paramètre
+        const paramName = patternParts[i].slice(1);
+        params[paramName] = pathParts[i];
+      } else if (patternParts[i] !== pathParts[i]) {
+        // Pas de match
+        return null;
+      }
+    }
+
+    return params;
   }
 
   // Naviguer vers une route

@@ -9,6 +9,7 @@ import header from './components/Header.js';
 import homePage from './pages/Home.js';
 import projectsPage from './pages/Projects.js';
 import contactPage from './pages/Contact.js';
+import projectDetailPage from './pages/ProjectDetail.js'
 
 // Initialisation
 console.log('Portfolio initialized! 🚀');
@@ -34,6 +35,12 @@ document.addEventListener('DOMContentLoaded', async () => {
     await projectsPage.init();
     appContainer.innerHTML = projectsPage.render();
     projectsPage.attachEvents();
+    window.scrollTo(0, 0);
+  });
+
+   router.addRoute('/projects/:slug', async (params) => {
+    await projectDetailPage.init(params.slug);
+    appContainer.innerHTML = projectDetailPage.render();
     window.scrollTo(0, 0);
   });
   

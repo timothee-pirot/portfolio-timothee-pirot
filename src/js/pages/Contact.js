@@ -3,7 +3,7 @@ import footer from '../components/Footer.js';
 class Contact {
   render() {
     return `
-      <div class="container mx-auto px-6 py-24 min-h-[60vh] flex items-center justify-center">
+      <div class="pt-20 container mx-auto px-6 py-24 min-h-[60vh] flex items-center justify-center">
         <div class="text-center max-w-2xl">
           <p class="mb-2 font-mono text-sm tracking-wider text-primary">
             // contact
@@ -15,7 +15,7 @@ class Contact {
             Pour toute question ou opportunité, n'hésitez pas à me contacter via le formulaire ci-dessous.
           </p>
           
-            href="mailto:timothee.krieger@example.com"
+            href="mailto:t.pirot@free.fr"
             class="inline-flex items-center gap-2 rounded-lg bg-primary px-6 py-3 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90"
           >
             <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
