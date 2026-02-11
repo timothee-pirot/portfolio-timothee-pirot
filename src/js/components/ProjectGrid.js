@@ -12,39 +12,23 @@ class ProjectGrid {
   }
 
   async init() {
-    // Charger les données
+    // Charger les données avec la nouvelle structure
     const [projectsData, skillsData] = await Promise.all([
-      fetch('/src/data/projects.json').then(r => r.json()),
-      fetch('/src/data/skills.json').then(r => r.json())
+      fetch('/portfolio-timothee-pirot/src/data/projects.json').then(r => r.json()),
+      fetch('/portfolio-timothee-pirot/src/data/skills.json').then(r => r.json())
     ]);
     
-    this.projects = projectsData;
-    this.skills = skillsData;
-    
-    // Extraire les catégories uniques
-    this.categories = [
-      { value: 'all', label: 'Tous' },
-      ...Array.from(new Set(this.projects.map(p => p.category)))
-        .map(cat => ({ value: cat, label: this.formatCategoryLabel(cat) }))
-    ];
-  }
-
-  formatCategoryLabel(category) {
-    const labels = {
-      'robotique': 'Robotique',
-      'iot': 'IoT',
-      'code': 'Code',
-      'devops': 'DevOps',
-      'cao': 'CAO'
-    };
-    return labels[category] || category;
+    // Extraire projects et categories
+    this.projects = projectsData.projects;
+    this.categories = projectsData.categories;
+    this.skills = skillsData.skills;
   }
 
   render() {
     const uniqueSkills = Array.from(new Set(this.skills.map(s => s.name))).sort();
     
     return `
-      <div class="container mx-auto px-6 py-12">
+      <div class="pt-20 container mx-auto px-6 py-12">
         <div class="mb-12">
           <p class="mb-2 font-mono text-sm tracking-wider text-primary">
             // projets
@@ -164,7 +148,7 @@ class ProjectGrid {
     // Sort
     switch (this.sort) {
       case 'recent':
-        result.sort((a, b) => b.year - a.year);
+        result.sort((a, b) => (b.dates?.year || b.year) - (a.dates?.year || a.year));
         break;
       case 'name':
         result.sort((a, b) => a.title.localeCompare(b.title));

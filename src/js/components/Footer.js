@@ -13,7 +13,7 @@ class Footer {
       },
       {
         label: 'Email',
-        href: 'mailto:timothee.krieger@example.com',
+        href: 'mailto:t.pirot@free.fr',
         icon: '<svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>'
       }
     ];
@@ -34,7 +34,7 @@ class Footer {
                 Disponible pour une alternance à partir de janvier 2026. N'hésitez pas à me contacter pour discuter d'opportunités.
               </p>
               
-                href="mailto:timothee.krieger@example.com"
+                <a href="mailto:t.pirot@free.fr"
                 class="mt-6 inline-flex items-center gap-2 rounded-lg bg-primary px-6 py-3 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90"
               >
                 <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -53,7 +53,7 @@ class Footer {
                 <div class="flex gap-4">
                   ${socialLinks.map(link => `
                     
-                      href="${link.href}"
+                      <a href="${link.href}"
                       target="_blank"
                       rel="noopener noreferrer"
                       class="flex h-10 w-10 items-center justify-center rounded-lg border border-border text-muted-foreground transition-all hover:border-primary hover:text-primary"
@@ -70,7 +70,7 @@ class Footer {
           <!-- Bottom bar -->
           <div class="mt-12 flex flex-col items-center justify-between gap-4 border-t border-border pt-8 text-xs text-muted-foreground sm:flex-row">
             <p>
-              Timothée Krieger © 2026. Tous droits réservés.
+              Timothée Pirot © 2026. Tous droits réservés.
             </p>
             <p class="font-mono">
               Construit avec TailwindCSS & Vite

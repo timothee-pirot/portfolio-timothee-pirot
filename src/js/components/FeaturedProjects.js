@@ -6,8 +6,9 @@ class FeaturedProjects {
   }
 
   async init() {
-    const response = await fetch('portfolio-timothee-pirot/src/data/projects.json');
-    this.projects = await response.json();
+    const response = await fetch('/portfolio-timothee-pirot/src/data/projects.json');
+    const data = await response.json();
+    this.projects = data.projects;
   }
 
   render() {
@@ -23,14 +24,14 @@ class FeaturedProjects {
           <div class="mb-12 flex items-end justify-between">
             <div>
               <p class="mb-2 font-mono text-sm tracking-wider text-primary">
-                // projets
+                // Projets
               </p>
               <h2 class="text-3xl font-bold text-foreground md:text-4xl">
                 Projets mis en avant
               </h2>
             </div>
             
-              href="#/projects"
+              <a href="#/projects"
               class="hidden items-center gap-1 text-sm text-muted-foreground transition-colors hover:text-primary md:flex"
             >
               Voir tous les projets
@@ -55,7 +56,7 @@ class FeaturedProjects {
 
           <div class="mt-8 flex justify-center md:hidden">
             
-              href="#/projects"
+              <a href="#/projects"
               class="inline-flex items-center gap-1 rounded-lg border border-border px-5 py-2.5 text-sm text-foreground transition-colors hover:border-primary hover:text-primary"
             >
               Voir tous les projets
