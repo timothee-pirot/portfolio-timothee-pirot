@@ -1,21 +1,20 @@
-{"projects": [
+{
+  "projects": [
     {
       "slug": "evolutek-robot",
       "title": "Robot Coupe de France",
       "category": "robotique",
       "context": "association",
       "dates": {
-        "year": 2025,
+        "year": 2026,
         "start": "january",
         "end": "december"
       },
       "status": "completed",
       "duration": "8 mois",
-      "thumbnail": "/src/assets/images/evolutek.jpg",
+      "thumbnail": "/portfolio-timothee-pirot/public/assets/images/projets/img-blanc.png",
       "gallery": [
-        "/src/assets/images/evolutek-1.jpg",
-        "/src/assets/images/evolutek-2.jpg",
-        "/src/assets/images/evolutek-3.jpg"
+        "/portfolio-timothee-pirot/public/assets/images/projets/img-blanc.png"
       ],
       "snippet": "Conception et programmation d'un robot autonome pour la Coupe de France de Robotique.",
       "skills": ["CATIA", "Mécanique", "ROS", "C/C++", "Linux"],
@@ -48,14 +47,360 @@
           "label": "GitHub"
         }
       ]
+    },
+    {
+      "slug": "odyssee-du-de-java",
+      "title": "L'Odyssée du Dé",
+      "category": "dev",
+      "context": "school",
+      "dates": {
+        "year": 2025,
+        "start": "november",
+        "end": "december"
+      },
+      "status": "completed",
+      "duration": "3 semaines",
+      "thumbnail": "/portfolio-timothee-pirot/public/assets/images/projets/img-blanc.png",
+      "gallery": [
+        "/portfolio-timothee-pirot/public/assets/images/projets/img-blanc.png"
+      ],
+      "snippet": "Réinvention moderne du Ludo sous Java/LibGDX, intégrant un système d'événements mystères, une IA tactique et une architecture modulaire documentée.",
+      "skills": ["Java", "LibGDX", "JUnit", "IA", "POO", "Gradle", "UML"],
+      "description": {
+        "contexte": {
+          "show": true,
+          "content": "Développement d'un jeu de plateau numérique au sein du groupe PAR-12 à EPITECH. L'objectif était de moderniser le Ludo classique en y ajoutant des mécaniques de RPG et une architecture logicielle robuste."
+        },
+        "challenge": {
+          "show": true,
+          "content": "Gérer un système complexe d'états de pions (base, jeu, bloqué, barricade, immunisé) et implémenter un moteur d'événements aléatoires (MysteryCell) influençant dynamiquement le cours de la partie."
+        },
+        "solution": {
+          "show": true,
+          "content": "Architecture découplée avec un moteur (Engine) synchrone, une validation stricte via une classe Rules, et une interface LibGDX gérant animations et retours visuels (clignotements, messages dynamiques). Documentation complète via JavaDoc et diagrammes UML."
+        },
+        "results": {
+          "show": true,
+          "content": "Un jeu complet incluant IA, gestion des barrages et captures, un système de logs (GameLogger) et un Game Design Document (GDD) structuré. Le projet supporte plusieurs types de bonus/malus (téléportation, boost, explosion de barrages)."
+        },
+        "competences": {
+          "show": true,
+          "content": "Maîtrise de la POO avancée, gestion du cycle de vie LibGDX, conception d'algorithmes d'IA de décision et automatisation de build avec Gradle."
+        }
+      },
+      "links": [
+        {
+          "type": "github",
+          "url": null,
+          "label": "GitHub"
+        }
+      ]
+    },
+    {
+      "slug": "3dof-robotic-arm-simulation",
+      "title": "Simulation de Bras Robotique 3DOF",
+      "category": "robotique",
+      "context": "personal",
+      "dates": {
+        "year": 2025,
+        "start": "juillet",
+        "end": null
+      },
+      "status": "completed",
+      "duration": "3 semaines",
+      "thumbnail": "/portfolio-timothee-pirot/public/assets/images/projets/img-blanc.png",
+      "gallery": [
+        "/portfolio-timothee-pirot/public/assets/images/projets/img-blanc.png"
+      ],
+      "snippet": "Simulation complète d'un bras articulé à 3 degrés de liberté sous ROS 2, incluant modélisation URDF et contrôle d'actionneurs.",
+      "skills": ["ROS2", "Gazebo", "Rviz", "URDF/XACRO", "ros2_control"],
+      "description": {
+        "contexte": {
+          "show": true,
+          "content": "Développement d'un environnement de simulation pour un bras robotique à 3 degrés de liberté (3DOF) afin de tester des algorithmes de contrôle sans risque matériel."
+        },
+        "challenge": {
+          "show": true,
+          "content": "Modéliser précisément la structure cinématique du robot et intégrer la couche de contrôle matériel simulée via ros2_control."
+        },
+        "solution": {
+          "show": true,
+          "content": "Utilisation de XACRO pour une modélisation URDF modulaire, intégration de Gazebo pour la simulation physique et de Rviz pour la visualisation des données capteurs et de l'état du robot."
+        },
+        "results": {
+          "show": true,
+          "content": "Simulation fonctionnelle permettant le pilotage des joints du bras avec une réponse physique réaliste dans l'environnement virtuel."
+        },
+        "competences": {
+          "show": true,
+          "content": "Maîtrise de l'écosystème ROS 2, de la modélisation robotique et des outils de simulation standard de l'industrie."
+        }
+      },
+      "links": [
+        {
+          "type": "github",
+          "url": "https://github.com/...",
+          "label": "GitHub"
+        }
+      ]
+    },
+    {
+      "slug": "bras-robotique-lego-v2-1",
+      "title": "Bras Robotique Lego Technic v2.1",
+      "category": "robotique",
+      "context": "personal",
+      "dates": {
+        "year": 2025,
+        "start": "2025",
+        "end": "2025"
+      },
+      "status": "completed",
+      "duration": "6 mois (itération v2.1)",
+      "thumbnail": "/portfolio-timothee-pirot/public/assets/images/projets/img-blanc.png",
+      "gallery": [
+        "/portfolio-timothee-pirot/public/assets/images/projets/img-blanc.png"
+      ],
+      "snippet": "Évolution majeure d'un bras robotique autonome : optimisation de la structure mécanique et pilotage avancé via Python et Hub intelligent.",
+      "skills": [
+        "Python",
+        "Pybricks",
+        "Lego Technic Hub",
+        "Conception Mécanique",
+        "Mécatronique"
+      ],
+      "description": {
+        "contexte": {
+          "show": true,
+          "content": "Seconde phase de développement visant à transformer un prototype initial en un système robotique robuste et précis, capable de reproduire des mouvements complexes."
+        },
+        "challenge": {
+          "show": true,
+          "content": "Concevoir une structure capable de supporter des charges plus lourdes tout en maintenant une fluidité de mouvement, et passer d'une programmation par blocs à une programmation Python pure."
+        },
+        "solution": {
+          "show": true,
+          "content": "Refonte complète de la cinématique, utilisation du Hub Technic pour la gestion synchronisée des moteurs et implémentation d'une logique de commande autonome basée sur des scripts Python."
+        },
+        "results": {
+          "show": true,
+          "content": "Amélioration significative de la précision du positionnement. Le bras est capable de réaliser des cycles de tâches répétitives de manière totalement autonome."
+        },
+        "competences": {
+          "show": true,
+          "content": "Maîtrise de l'itération de conception (prototypage -> test -> amélioration), programmation Python pour le hardware et analyse mécanique."
+        }
+      },
+      "links": [
+        {
+          "type": "github",
+          "url": null,
+          "label": "GitHub"
+        }
+      ]
+    },
+    {
+      "slug": "maison-intelligente-arduino-tinkercad",
+      "title": "Domotique : Maison Intelligente",
+      "category": ["robotique", "dev"],
+      "context": "school",
+      "dates": {
+        "year": 2025,
+        "start": null,
+        "end": null
+      },
+      "status": "completed",
+      "duration": null,
+      "thumbnail": "/portfolio-timothee-pirot/public/assets/images/projets/img-blanc.png",
+      "gallery": [
+        "/portfolio-timothee-pirot/public/assets/images/projets/img-blanc.png"
+      ],
+      "snippet": "Simulation d'un système domotique complet sous Tinkercad, incluant la gestion automatisée du chauffage, des volets et de la ventilation (VMC).",
+      "skills": ["C++", "Arduino", "Tinkercad", "Électronique", "Domotique"],
+      "description": {
+        "contexte": {
+          "show": true,
+          "content": "Conception d'un prototype de maison connectée visant à optimiser le confort et la consommation énergétique via des systèmes automatisés."
+        },
+        "challenge": {
+          "show": true,
+          "content": "Intégrer plusieurs boucles de contrôle indépendantes (température, luminosité, qualité de l'air) sur un seul microcontrôleur Arduino."
+        },
+        "solution": {
+          "show": true,
+          "content": "Développement en C++ pour piloter des servomoteurs (volets), des capteurs de température (chauffage) et des moteurs CC (VMC). Simulation logicielle et matérielle intégrale sur Tinkercad."
+        },
+        "results": {
+          "show": true,
+          "content": "Système fonctionnel capable de réguler la température ambiante et d'ajuster l'ouverture des volets en fonction des conditions environnementales simulées."
+        },
+        "competences": {
+          "show": true,
+          "content": "Programmation de microcontrôleurs, lecture de schémas électroniques et logique de régulation en boucle fermée."
+        }
+      },
+      "links": [
+        {
+          "type": "tinkercad",
+          "url": null,
+          "label": "Lien Tinkercad"
+        }
+      ]
+    },
+    {
+      "slug": "supemon-c-console",
+      "title": "Jeu Supémon",
+      "category": "dev",
+      "context": "school",
+      "dates": {
+        "year": 2025,
+        "start": null,
+        "end": null
+      },
+      "status": "completed",
+      "duration": "1 mois",
+      "thumbnail": "/portfolio-timothee-pirot/public/assets/images/projets/img-blanc.png",
+      "gallery": [
+        "/portfolio-timothee-pirot/public/assets/images/projets/img-blanc.png"
+      ],
+      "snippet": "Jeu de rôle en C avec affichage console, incluant un système de combat au tour par tour et une gestion de sauvegarde.",
+      "skills": ["C", "Algorithmique", "Gestion de fichiers", "Console UI"],
+      "description": {
+        "contexte": {
+          "show": true,
+          "content": "Développement d'un jeu d'aventure inspiré de l'univers Pokémon, entièrement réalisé en langage C avec une interface en ligne de commande."
+        },
+        "challenge": {
+          "show": true,
+          "content": "Mettre en place une logique de combat équilibrée et gérer la persistance des données pour permettre au joueur de reprendre sa progression."
+        },
+        "solution": {
+          "show": true,
+          "content": "Utilisation de structures de données complexes pour les entités (Supémons) et manipulation de fichiers pour le système de sauvegarde/chargement."
+        },
+        "results": {
+          "show": true,
+          "content": "Un jeu fonctionnel permettant d'affronter des créatures sauvages et de conserver ses statistiques d'une session à l'autre."
+        },
+        "competences": {
+          "show": true,
+          "content": "Maîtrise de la gestion de la mémoire, des pointeurs et des entrées/sorties de fichiers en C."
+        }
+      },
+      "links": [
+        {
+          "type": "github",
+          "url": "https://github.com/...",
+          "label": "GitHub"
+        }
+      ]
+    },
+    {
+      "slug": "lego-technic-robotic-arm",
+      "title": "Bras Robotique Lego Technic",
+      "category": "robotique",
+      "context": "personal",
+      "dates": {
+        "year": 2024,
+        "start": "2024",
+        "end": "2025"
+      },
+      "status": "completed",
+      "duration": "1 an",
+      "thumbnail": "/portfolio-timothee-pirot/public/assets/images/projets/img-blanc.png",
+      "gallery": [
+        "/portfolio-timothee-pirot/public/assets/images/projets/img-blanc.png"
+      ],
+      "snippet": "Conception et programmation d'un bras articulé autonome utilisant l'écosystème Lego Mindstorms et Python pour la logique de contrôle.",
+      "skills": [
+        "Python",
+        "Lego Mindstorms",
+        "Robotique",
+        "Capteurs & Actionneurs"
+      ],
+      "description": {
+        "contexte": {
+          "show": true,
+          "content": "Réalisation d'un bras robotique motorisé en s'appuyant sur la polyvalence des pièces Lego Technic et la puissance de programmation de l'unité Mindstorms."
+        },
+        "challenge": {
+          "show": true,
+          "content": "Assurer la précision des mouvements malgré les jeux mécaniques inhérents aux briques et automatiser les tâches en utilisant des retours capteurs."
+        },
+        "solution": {
+          "show": true,
+          "content": "Développement d'un script Python pour gérer l'asservissement des moteurs et l'interprétation des données des capteurs (distance, contact) pour un fonctionnement autonome."
+        },
+        "results": {
+          "show": true,
+          "content": "Système capable d'identifier, de saisir et de déplacer des objets de manière autonome avec une répétabilité satisfaisante."
+        },
+        "competences": {
+          "show": true,
+          "content": "Intégration hardware/software, prototypage rapide et résolution de problèmes mécaniques."
+        }
+      },
+      "links": [
+        {
+          "type": "github",
+          "url": "https://github.com/...",
+          "label": "GitHub"
+        }
+      ]
+    },
+    {
+      "slug": "jeu-yinsh-python-tkinter",
+      "title": "Jeu de Yinsh",
+      "category": "dev",
+      "context": "school",
+      "dates": {
+        "year": 2024,
+        "start": "Janvier",
+        "end": "Mai"
+      },
+      "status": "completed",
+      "duration": "5 mois",
+      "thumbnail": "/portfolio-timothee-pirot/public/assets/images/projets/img-blanc.png",
+      "gallery": [
+        "/portfolio-timothee-pirot/public/assets/images/projets/img-blanc.png"
+      ],
+      "snippet": "Numérisation du jeu de société abstrait Yinsh, incluant la gestion des mécaniques de retournement de marqueurs et de déplacements d'anneaux.",
+      "skills": ["Python", "Tkinter", "Algorithmique", "Logique de jeu"],
+      "description": {
+        "contexte": {
+          "show": true,
+          "content": "Développement d'une version numérique du jeu Yinsh, un jeu de stratégie abstrait du projet GIPF, utilisant Python et l'interface Tkinter."
+        },
+        "challenge": {
+          "show": true,
+          "content": "Implémenter les règles complexes de déplacement des anneaux et la mécanique de retournement des marqueurs (système d'Othello/Reversi sur plateau spécifique)."
+        },
+        "solution": {
+          "show": true,
+          "content": "Conception d'un moteur de jeu gérant les coordonnées du plateau hexagonal et les conditions de victoire basées sur l'alignement de marqueurs."
+        },
+        "results": {
+          "show": true,
+          "content": "Une application interactive permettant à deux joueurs de s'affronter en respectant l'intégralité des règles officielles du jeu."
+        },
+        "competences": {
+          "show": true,
+          "content": "Modélisation de structures de données pour des plateaux de jeu non-standards et gestion des interactions graphiques avec Tkinter."
+        }
+      },
+      "links": [
+        {
+          "type": "github",
+          "url": null,
+          "label": "GitHub"
+        }
+      ]
     }
-  ], 
+  ],
   "categories": [
-        { "value": "all", "label": "Tous" },
-        { "value": "robotique", "label": "Robotique", "color": "#3B82F6" },
-        { "value": "iot", "label": "IoT", "color": "#10B981" },
-        { "value": "code", "label": "Code", "color": "#F59E0B" },
-        { "value": "devops", "label": "DevOps", "color": "#8B5CF6" },
-        { "value": "cao", "label": "CAO", "color": "#EC4899" }
-       ]
+    { "value": "all", "label": "Tous" },
+    { "value": "robotique", "label": "Robotique", "color": "#3B82F6" },
+    { "value": "dev", "label": "Développement", "color": "#F59E0B" },
+    { "value": "devops", "label": "DevOps", "color": "#8B5CF6" },
+    { "value": "cao", "label": "CAO", "color": "#EC4899" }
+  ]
 }

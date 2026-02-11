@@ -1,37 +1,169 @@
 {
   "skills": [
+        {
+      "name": "C/C++",
+      "category": "languages",
+      "type": "languages",
+      "icon": "cpp-icon.svg",
+      "projectSlugs": ["supemon-c-console"],
+      "origin": ["school"]
+    },
+    {
+      "name": "Python",
+      "category": "languages",
+      "type": "languages",
+      "icon": null,
+      "projectSlugs": ["lego-technic-robotic-arm"],
+      "origin": ["school", "personal"]
+    },
+    {
+      "name": "Java",
+      "category": "languages",
+      "type": "languages",
+      "icon": null,
+      "projectSlugs": ["odyssee-du-de-java"],
+      "origin": ["school"]
+    },
+    {
+      "name": "SQL",
+      "category": "languages",
+      "type": "languages",
+      "icon": null,
+      "projectSlugs": [""],
+      "origin": ["school"]
+    },
+    {
+      "name": "Javascript",
+      "category": "languages",
+      "type": "languages",
+      "icon": null,
+      "projectSlugs": [""],
+      "origin": ["school"]
+    },
+    {
+      "name": "HTML",
+      "category": "languages",
+      "type": "languages",
+      "icon": null,
+      "projectSlugs": [""],
+      "origin": ["school", "personal"]
+    },
+    {
+      "name": "CSS",
+      "category": "languages",
+      "type": "languages",
+      "icon": null,
+      "projectSlugs": [""],
+      "origin": ["school", "personal"]
+    },
+    {
+      "name": "TypeScript",
+      "category": "languages",
+      "type": "languages",
+      "icon": null,
+      "projectSlugs": [""],
+      "origin": ["work"]
+    },
+
+    {
+      "name": "VS Code",
+      "category": "tools",
+      "type": "tools",
+      "icon": null,
+      "projectSlugs": ["all"],
+      "origin": ["school", "personal"]
+    },
+    {
+      "name": "git & github",
+      "category": "tools",
+      "type": "tools",
+      "icon": null,
+      "projectSlugs": ["all"],
+      "origin": ["school", "personal"]
+    },
+    {
+      "name": "JavaDoc",
+      "category": "tools",
+      "type": "tools",
+      "icon": null,
+      "projectSlugs": ["all"],
+      "origin": ["school"]
+    },
+    {
+      "name": "Arduino",
+      "category": "tools",
+      "type": "tools",
+      "icon": null,
+      "projectSlugs": ["all"],
+      "origin": ["school"]
+    },
+
+    {
+      "name": "ROS 2 Jazzy",
+      "category": "frameworks",
+      "type": "framework",
+      "icon": "ros-icon.svg",
+      "projectSlugs": ["3dof-robotic-arm-simulation"],
+      "origin": ["personal"]
+    },
+    {
+      "name": "BootStrap",
+      "category": "frameworks",
+      "type": "framework",
+      "icon": null,
+      "projectSlugs": ["autre"],
+      "origin": ["personal", "school"]
+    },
+    {
+      "name": "TailWind",
+      "category": "frameworks",
+      "type": "framework",
+      "icon": null,
+      "projectSlugs": ["autre"],
+      "origin": ["personal"]
+    },
+    {
+      "name": "REACT",
+      "category": "frameworks",
+      "type": "framework",
+      "icon": null,
+      "projectSlugs": ["autre"],
+      "origin": ["work"]
+    },
+
     {
       "name": "CATIA",
       "category": "software",
       "type": "software",
       "icon": "catia-icon.svg",
       "projectSlugs": ["evolutek-robot", "3d-printing"],
-      "origin": ["school"]
+      "origin": ["association"]
+    }, 
+    {
+      "name": "Suite Office",
+      "category": "software",
+      "type": "software",
+      "icon": null,
+      "projectSlugs": ["all"],
+      "origin": ["personal"]
     },
     {
-      "name": "ROS",
-      "category": "frameworks",
-      "type": "framework",
-      "icon": "ros-icon.svg",
-      "projectSlugs": ["evolutek-robot"],
-      "origin": ["school", "association"]
+      "name": "Gazebo",
+      "category": "software",
+      "type": "software",
+      "icon": null,
+      "projectSlugs": ["3dof-robotic-arm-simulation"],
+      "origin": ["personal"]
     },
     {
-      "name": "C/C++",
-      "category": "languages",
-      "type": "language",
-      "icon": "cpp-icon.svg",
-      "projectSlugs": ["evolutek-robot"],
-      "origin": ["school", "personal"]
+      "name": "Tinkercad",
+      "category": "software",
+      "type": "software",
+      "icon": null,
+      "projectSlugs": ["all"],
+      "origin": ["personal"]
     },
-    {
-      "name": "Linux",
-      "category": "tools",
-      "type": "tool",
-      "icon": "linux-icon.svg",
-      "projectSlugs": ["evolutek-robot"],
-      "origin": ["school", "personal"]
-    },
+
     {
       "name": "Travail en équipe",
       "category": "soft-skills",
@@ -39,6 +171,14 @@
       "icon": null,
       "projectSlugs": ["evolutek-robot"],
       "origin": ["school", "association"]
+    },
+    {
+      "name": "",
+      "category": "",
+      "type": "",
+      "icon": null,
+      "projectSlugs": [""],
+      "origin": [""]
     }
   ],
   "categories": [
