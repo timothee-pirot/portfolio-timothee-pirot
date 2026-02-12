@@ -1,0 +1,20 @@
+{
+  "availability": {
+    "status": "available",
+    "type": "alternance",
+    "duration": "31 mois",
+    "startDate": "Immédiat",
+    "fields": [
+      "Robotique, Systèmes Embarqués & IoT",
+      "Développement"
+    ]
+  },
+  "headline": {
+    "fr": "En recherche d'une alternance de 31 mois en robotique, systèmes embarqués & IoT, ou en développement",
+    "en": "Seeking 31-month apprenticeship in Robotics, Embedded Systems & IoT, or Development"
+  },
+  "shortHeadline": {
+    "fr": "Alternance • Robotique & Développement • 31 mois",
+    "en": "Apprenticeship • Robotics & Development • 31 months"
+  }
+}
