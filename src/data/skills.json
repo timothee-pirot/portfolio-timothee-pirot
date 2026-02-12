@@ -1,11 +1,11 @@
 {
   "skills": [
-        {
-      "name": "C/C++",
+    {
+      "name": "C++",
       "category": "languages",
       "type": "languages",
       "icon": "cpp-icon.svg",
-      "projectSlugs": ["supemon-c-console"],
+      "projectSlugs": [null],
       "origin": ["school"]
     },
     {
@@ -13,7 +13,7 @@
       "category": "languages",
       "type": "languages",
       "icon": null,
-      "projectSlugs": ["lego-technic-robotic-arm"],
+      "projectSlugs": ["lego-technic-robotic-arm", "morpion-tkinter-python", "jeu-yinsh-python-tkinter"],
       "origin": ["school", "personal"]
     },
     {
@@ -25,11 +25,19 @@
       "origin": ["school"]
     },
     {
+      "name": "C",
+      "category": "languages",
+      "type": "languages",
+      "icon": null,
+      "projectSlugs": ["supemon-c-console"],
+      "origin": [null]
+    },
+    {
       "name": "SQL",
       "category": "languages",
       "type": "languages",
       "icon": null,
-      "projectSlugs": [""],
+      "projectSlugs": [null],
       "origin": ["school"]
     },
     {
@@ -37,41 +45,72 @@
       "category": "languages",
       "type": "languages",
       "icon": null,
-      "projectSlugs": [""],
+      "projectSlugs": [null],
       "origin": ["school"]
-    },
-    {
-      "name": "HTML",
-      "category": "languages",
-      "type": "languages",
-      "icon": null,
-      "projectSlugs": [""],
-      "origin": ["school", "personal"]
-    },
-    {
-      "name": "CSS",
-      "category": "languages",
-      "type": "languages",
-      "icon": null,
-      "projectSlugs": [""],
-      "origin": ["school", "personal"]
     },
     {
       "name": "TypeScript",
       "category": "languages",
       "type": "languages",
       "icon": null,
-      "projectSlugs": [""],
+      "projectSlugs": [null],
       "origin": ["work"]
     },
-
     {
-      "name": "VS Code",
+      "name": "HTML/CSS",
+      "category": "languages",
+      "type": "languages",
+      "icon": null,
+      "projectSlugs": [null],
+      "origin": ["school", "personal"]
+    },
+    {
+      "name": "ROS 2 Jazzy",
+      "category": "frameworks",
+      "type": "framework",
+      "icon": "ros-icon.svg",
+      "projectSlugs": ["3dof-robotic-arm-simulation"],
+      "origin": ["personal"]
+    },
+    {
+      "name": "LibGDX",
+      "category": "frameworks",
+      "type": "framework",
+      "icon": null,
+      "projectSlugs": ["odyssee-du-de-java", "odyssee-du-de-v2"],
+      "origin": [null]
+    },
+    {
+      "name": "Tkinter",
+      "category": "frameworks",
+      "type": "framework",
+      "icon": null,
+      "projectSlugs": ["morpion-tkinter-python", "jeu-yinsh-python-tkinter"],
+      "origin": [null]
+    },
+    {
+      "name": "React",
+      "category": "frameworks",
+      "type": "framework",
+      "icon": null,
+      "projectSlugs": ["autre"],
+      "origin": ["work"]
+    },
+    {
+      "name": "JUnit",
       "category": "tools",
       "type": "tools",
       "icon": null,
-      "projectSlugs": ["all"],
-      "origin": ["school", "personal"]
+      "projectSlugs": ["odyssee-du-de-java"],
+      "origin": [null]
+    },
+    {
+      "name": "Tiled Map Editor",
+      "category": "tools",
+      "type": "tools",
+      "icon": null,
+      "projectSlugs": ["odyssee-du-de-v2"],
+      "origin": [null]
     },
     {
       "name": "git & github",
@@ -82,70 +121,28 @@
       "origin": ["school", "personal"]
     },
     {
-      "name": "JavaDoc",
+      "name": "Gradle",
       "category": "tools",
       "type": "tools",
       "icon": null,
-      "projectSlugs": ["all"],
-      "origin": ["school"]
+      "projectSlugs": ["odyssee-du-de-java"],
+      "origin": [null]
     },
-    {
-      "name": "Arduino",
-      "category": "tools",
-      "type": "tools",
-      "icon": null,
-      "projectSlugs": ["all"],
-      "origin": ["school"]
-    },
-
-    {
-      "name": "ROS 2 Jazzy",
-      "category": "frameworks",
-      "type": "framework",
-      "icon": "ros-icon.svg",
-      "projectSlugs": ["3dof-robotic-arm-simulation"],
-      "origin": ["personal"]
-    },
-    {
-      "name": "BootStrap",
-      "category": "frameworks",
-      "type": "framework",
-      "icon": null,
-      "projectSlugs": ["autre"],
-      "origin": ["personal", "school"]
-    },
-    {
-      "name": "TailWind",
-      "category": "frameworks",
-      "type": "framework",
-      "icon": null,
-      "projectSlugs": ["autre"],
-      "origin": ["personal"]
-    },
-    {
-      "name": "REACT",
-      "category": "frameworks",
-      "type": "framework",
-      "icon": null,
-      "projectSlugs": ["autre"],
-      "origin": ["work"]
-    },
-
     {
       "name": "CATIA",
       "category": "software",
       "type": "software",
       "icon": "catia-icon.svg",
-      "projectSlugs": ["evolutek-robot", "3d-printing"],
+      "projectSlugs": ["evolutek-robot", "conception-rangement-catia-3d"],
       "origin": ["association"]
-    }, 
+    },
     {
-      "name": "Suite Office",
+      "name": "Godot Engine",
       "category": "software",
       "type": "software",
       "icon": null,
-      "projectSlugs": ["all"],
-      "origin": ["personal"]
+      "projectSlugs": ["city-idle-godot"],
+      "origin": [null]
     },
     {
       "name": "Gazebo",
@@ -156,14 +153,45 @@
       "origin": ["personal"]
     },
     {
+      "name": "Rviz",
+      "category": "software",
+      "type": "software",
+      "icon": null,
+      "projectSlugs": ["3dof-robotic-arm-simulation"],
+      "origin": [null]
+    },
+    {
       "name": "Tinkercad",
       "category": "software",
       "type": "software",
       "icon": null,
-      "projectSlugs": ["all"],
+      "projectSlugs": ["maison-intelligente-arduino-tinkercad"],
       "origin": ["personal"]
     },
-
+    {
+      "name": "Impression 3D",
+      "category": "engineering",
+      "type": "technical",
+      "icon": null,
+      "projectSlugs": ["conception-rangement-catia-3d"],
+      "origin": [null]
+    },
+    {
+      "name": "Mécanique / Conception",
+      "category": "engineering",
+      "type": "technical",
+      "icon": null,
+      "projectSlugs": ["bras-robotique-lego-v2-1"],
+      "origin": [null]
+    },
+    {
+      "name": "Électronique / Domotique",
+      "category": "engineering",
+      "type": "technical",
+      "icon": null,
+      "projectSlugs": ["maison-intelligente-arduino-tinkercad"],
+      "origin": [null]
+    },
     {
       "name": "Travail en équipe",
       "category": "soft-skills",
@@ -173,12 +201,60 @@
       "origin": ["school", "association"]
     },
     {
-      "name": "",
-      "category": "",
-      "type": "",
+      "name": "Algorithmique",
+      "category": "soft-skills",
+      "type": "technical",
       "icon": null,
-      "projectSlugs": [""],
-      "origin": [""]
+      "projectSlugs": ["supemon-c-console", "jeu-yinsh-python-tkinter"],
+      "origin": [null]
+    },
+    {
+      "name": "Suite Office",
+      "category": "software",
+      "type": "software",
+      "icon": null,
+      "projectSlugs": ["all"],
+      "origin": ["personal"]
+    },
+    {
+      "name": "TailWind",
+      "category": "frameworks",
+      "type": "framework",
+      "icon": null,
+      "projectSlugs": ["autre"],
+      "origin": ["personal"]
+    },
+    {
+      "name": "Bootstrap",
+      "category": "frameworks",
+      "type": "framework",
+      "icon": null,
+      "projectSlugs": ["autre"],
+      "origin": ["personal", "school"]
+    },
+    {
+      "name": "Arduino",
+      "category": "tools",
+      "type": "tools",
+      "icon": null,
+      "projectSlugs": ["all"],
+      "origin": ["school"]
+    },
+    {
+      "name": "JavaDoc",
+      "category": "tools",
+      "type": "tools",
+      "icon": null,
+      "projectSlugs": ["all"],
+      "origin": ["school"]
+    },
+    {
+      "name": "VS Code",
+      "category": "tools",
+      "type": "tools",
+      "icon": null,
+      "projectSlugs": ["all"],
+      "origin": ["school", "personal"]
     }
   ],
   "categories": [
@@ -187,6 +263,7 @@
     { "value": "tools", "label": "Outils", "color": "#10B981" },
     { "value": "frameworks", "label": "Frameworks", "color": "#F59E0B" },
     { "value": "software", "label": "Logiciels", "color": "#8B5CF6" },
+    { "value": "engineering", "label": "Ingénierie / Tech", "color": "#F97316" },
     { "value": "soft-skills", "label": "Soft Skills", "color": "#EC4899" }
   ]
 }

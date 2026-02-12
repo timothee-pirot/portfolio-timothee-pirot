@@ -1,4 +1,10 @@
+import profileData from "../../data/profile.json";
+
 class Hero {
+  constructor() {
+    this.profile = profileData;
+  }
+
   render() {
     return `
       <section class="relative flex min-h-[85vh] flex-col items-center justify-center px-6 pt-20 text-center">
@@ -19,11 +25,14 @@ class Hero {
             Timothée Pirot
           </h1>
           <p class="mt-3 text-lg font-medium text-muted-foreground md:text-xl">
-            Ingénieur Robotique & Systèmes Embarqués
+            ${this.profile.presentation.fr}
           </p>
-          <p class="mt-4 text-pretty leading-relaxed text-muted-foreground md:text-lg">
-            Étudiant PRE-MSc IoT | Disponible alternance Jan-Fev 2026
-          </p>
+          <div class="mt-4 rounded-lg bg-muted/50 border-l-4 border-primary p-4">
+            <p class="text-pretty leading-relaxed text-foreground md:text-xl font-medium">
+              ${this.profile.headline.fr} <br>
+              ${this.profile.mobility.fr}
+            </p>
+          </div>
 
           <div class="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
             
@@ -36,7 +45,7 @@ class Hero {
               id="scroll-to-skills"
               class="inline-flex items-center gap-2 rounded-lg border border-border px-6 py-3 text-sm font-medium text-foreground transition-colors hover:border-primary hover:text-primary"
             >
-              Voir les compétences
+              Voir mes compétences
             </button>
           </div>
         </div>
@@ -56,25 +65,25 @@ class Hero {
 
   attachEvents() {
     // Scroll to featured projects
-    const scrollToFeatured = document.getElementById('scroll-to-featured');
+    const scrollToFeatured = document.getElementById("scroll-to-featured");
     if (scrollToFeatured) {
-      scrollToFeatured.addEventListener('click', (e) => {
+      scrollToFeatured.addEventListener("click", (e) => {
         e.preventDefault();
-        const targetElement = document.getElementById('featured-projects');
+        const targetElement = document.getElementById("featured-projects");
         if (targetElement) {
-          targetElement.scrollIntoView({ behavior: 'smooth' });
+          targetElement.scrollIntoView({ behavior: "smooth" });
         }
       });
     }
 
     // Scroll to skills section
-    const scrollToSkills = document.getElementById('scroll-to-skills');
+    const scrollToSkills = document.getElementById("scroll-to-skills");
     if (scrollToSkills) {
-      scrollToSkills.addEventListener('click', (e) => {
+      scrollToSkills.addEventListener("click", (e) => {
         e.preventDefault();
-        const targetElement = document.getElementById('competences');
+        const targetElement = document.getElementById("competences");
         if (targetElement) {
-          targetElement.scrollIntoView({ behavior: 'smooth' });
+          targetElement.scrollIntoView({ behavior: "smooth" });
         }
       });
     }

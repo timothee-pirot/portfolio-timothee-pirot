@@ -16,5 +16,11 @@
   "shortHeadline": {
     "fr": "Alternance • Robotique & Développement • 31 mois",
     "en": "Apprenticeship • Robotics & Development • 31 months"
+  },
+  "presentation": {
+    "fr": "J'ai 24 ans, je suis franco-allemand et étudiant en Bac+3 (pré-MSc) chez EPITECH Paris. Je suis passionné de robotique, de systèmes embarqués, de modélisation et d'impression 3D, ainsi que de Lego depuis toujours."
+  },
+  "mobility": {
+    "fr": "Mobile en France et en Allemange"
   }
 }
