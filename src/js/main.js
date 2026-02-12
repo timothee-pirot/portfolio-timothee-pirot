@@ -9,7 +9,8 @@ import header from './components/Header.js';
 import homePage from './pages/Home.js';
 import projectsPage from './pages/Projects.js';
 import contactPage from './pages/Contact.js';
-import projectDetailPage from './pages/ProjectDetail.js'
+import projectDetailPage from './pages/ProjectDetail.js';
+import aboutPage from './pages/About.js';
 
 document.addEventListener('DOMContentLoaded', async () => {
   
@@ -40,6 +41,11 @@ document.addEventListener('DOMContentLoaded', async () => {
     window.scrollTo(0, 0);
   });
   
+  router.addRoute('/moi', () => {
+    appContainer.innerHTML = aboutPage.render();
+    window.scrollTo(0, 0);
+  });
+
   router.addRoute('/contact', () => {
     appContainer.innerHTML = contactPage.render();
     window.scrollTo(0, 0);

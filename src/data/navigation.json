@@ -3,6 +3,7 @@
   "mainNav": [
     { "id": "home", "label": "Accueil", "path": "/" },
     { "id": "projects", "label": "Projets", "path": "/projects" },
+    { "id": "about", "label": "Moi", "path": "/moi" },
     { "id": "contact", "label": "Contact", "path": "/contact" }
   ]
 }
