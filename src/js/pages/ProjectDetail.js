@@ -179,7 +179,7 @@ class ProjectDetail {
                   <div class="flex flex-col gap-2">
                     ${this.project.links.map(link => `
                       
-                        href="${link.url}"
+                        <a href="${link.url}"
                         target="_blank"
                         rel="noopener noreferrer"
                         class="flex items-center gap-2 px-3 py-2 rounded-lg border border-border text-sm font-medium text-foreground hover:border-primary hover:text-primary transition-colors"

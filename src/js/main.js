@@ -11,11 +11,7 @@ import projectsPage from './pages/Projects.js';
 import contactPage from './pages/Contact.js';
 import projectDetailPage from './pages/ProjectDetail.js'
 
-// Initialisation
-console.log('Portfolio initialized! 🚀');
-
 document.addEventListener('DOMContentLoaded', async () => {
-  console.log('DOM ready');
   
   // Initialiser le header
   await header.init();
