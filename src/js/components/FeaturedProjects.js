@@ -48,7 +48,7 @@ class FeaturedProjects {
 
             <!-- Grid of remaining -->
             ${featuredProjects.length > 1 ? `
-              <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+              <div class="grid gap-6 grid-cols-1 md:grid-cols-2">
                 ${featuredProjects.slice(1).map(project => projectCard.render(project)).join('')}
               </div>
             ` : ''}

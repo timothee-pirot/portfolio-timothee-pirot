@@ -49,8 +49,14 @@ class ProjectDetail {
     }
 
     const year = this.project.dates?.year || this.project.year || 2025;
-    const statusClass = this.project.status === "en-cours" ? "bg-primary text-primary-foreground" : "bg-secondary text-secondary-foreground";
-    const statusLabel = this.project.status === "en-cours" ? "En cours" : "Terminé";
+    const statusClass = this.project.status === "in_progress" ? "bg-primary text-primary-foreground" : "bg-secondary text-secondary-foreground";
+    const statusLabel = this.project.status === "in_progress" ? "En cours" : "Terminé";
+
+    // context peut être un string ou un array
+    const contexts = Array.isArray(this.project.context) ? this.project.context : [this.project.context];
+
+    // Filtrer les liens null
+    const validLinks = (this.project.links || []).filter(link => link !== null && link?.url);
 
     return `
       <div class="pt-20 container mx-auto px-6 py-12">
@@ -66,8 +72,8 @@ class ProjectDetail {
         <div class="mb-8">
           <div class="flex flex-wrap items-center gap-3 mb-4">
             <span class="inline-flex items-center gap-1.5 text-sm text-muted-foreground">
-              ${this.contextIcons[this.project.context.toLowerCase()]}
-              ${this.contextLabels[this.project.context.toLowerCase()]}
+              ${contexts.map(c => this.contextIcons[c.toLowerCase()]).join('')}
+              ${contexts.map(c => this.contextLabels[c.toLowerCase()]).join(' / ')}
             </span>
             <span class="text-muted-foreground">•</span>
             <span class="text-sm text-muted-foreground">${year}</span>
@@ -90,7 +96,7 @@ class ProjectDetail {
         <!-- Main image -->
         ${this.project.thumbnail ? `
           <div class="mb-12 rounded-xl overflow-hidden border border-border">
-            <img src="${this.project.thumbnail}" alt="${this.project.title}" class="w-full h-auto" />
+            <img src="${this.project.thumbnail}" alt="${this.project.title}" class="w-full max-h-[500px] object-cover" />
           </div>
         ` : ""}
 
@@ -111,11 +117,11 @@ class ProjectDetail {
             ${this.project.gallery && this.project.gallery.length > 0 ? `
               <div class="mt-16">
                 <h2 class="text-2xl font-bold text-foreground mb-6">Galerie</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  ${this.project.gallery.map(img => `
-                    <div class="rounded-xl overflow-hidden border border-border">
-                      <img src="${img}" alt="${this.project.title}" class="w-full h-auto" />
-                    </div>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                  ${this.project.gallery.map((img, i) => `
+                    <button type="button" data-gallery-index="${i}" class="gallery-thumb rounded-lg overflow-hidden border border-border hover:border-primary/50 transition-colors cursor-pointer">
+                      <img src="${img}" alt="${this.project.title}" class="w-full h-32 object-cover" />
+                    </button>
                   `).join("")}
                 </div>
               </div>
@@ -140,8 +146,8 @@ class ProjectDetail {
                   <div class="flex items-center justify-between">
                     <span class="text-sm text-muted-foreground">Contexte</span>
                     <span class="inline-flex items-center gap-1.5 text-sm text-foreground">
-                      ${this.contextIcons[this.project.context.toLowerCase()]}
-                      ${this.contextLabels[this.project.context.toLowerCase()]}
+                      ${contexts.map(c => this.contextIcons[c.toLowerCase()]).join('')}
+                      ${contexts.map(c => this.contextLabels[c.toLowerCase()]).join(' / ')}
                     </span>
                   </div>
                   <div class="flex items-center justify-between">
@@ -171,14 +177,14 @@ class ProjectDetail {
               </div>
 
               <!-- Links card -->
-              ${this.project.links && this.project.links.length > 0 ? `
+              ${validLinks.length > 0 ? `
                 <div class="rounded-xl border border-border bg-card p-5">
                   <h3 class="text-xs font-semibold uppercase tracking-wider text-muted-foreground mb-4">
                     Liens
                   </h3>
                   <div class="flex flex-col gap-2">
-                    ${this.project.links.map(link => `
-                      
+                    ${validLinks.map(link => `
+
                         <a href="${link.url}"
                         target="_blank"
                         rel="noopener noreferrer"
@@ -205,14 +211,117 @@ class ProjectDetail {
         </div>
       </div>
 
+      <!-- Lightbox -->
+      ${this.project.gallery && this.project.gallery.length > 0 ? `
+        <div id="lightbox" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/80 backdrop-blur-sm">
+          <!-- Close button -->
+          <button type="button" id="lightbox-close" class="absolute right-4 top-4 z-10 flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white hover:bg-white/20 transition-colors">
+            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+
+          <!-- Prev button -->
+          ${this.project.gallery.length > 1 ? `
+            <button type="button" id="lightbox-prev" class="absolute left-4 z-10 flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white hover:bg-white/20 transition-colors">
+              <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+              </svg>
+            </button>
+          ` : ''}
+
+          <!-- Image -->
+          <img id="lightbox-img" src="" alt="" class="max-h-[85vh] max-w-[90vw] rounded-lg object-contain" />
+
+          <!-- Next button -->
+          ${this.project.gallery.length > 1 ? `
+            <button type="button" id="lightbox-next" class="absolute right-4 z-10 flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white hover:bg-white/20 transition-colors">
+              <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+              </svg>
+            </button>
+          ` : ''}
+
+          <!-- Counter -->
+          ${this.project.gallery.length > 1 ? `
+            <div id="lightbox-counter" class="absolute bottom-4 left-1/2 -translate-x-1/2 rounded-full bg-white/10 px-3 py-1 text-sm text-white"></div>
+          ` : ''}
+        </div>
+      ` : ''}
+
       ${footer.render()}
     `;
+  }
+
+  attachEvents() {
+    if (!this.project?.gallery?.length) return;
+
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const counter = document.getElementById('lightbox-counter');
+    const gallery = this.project.gallery;
+    let current = 0;
+
+    const show = (index) => {
+      current = (index + gallery.length) % gallery.length;
+      lightboxImg.src = gallery[current];
+      lightboxImg.alt = `${this.project.title} - ${current + 1}`;
+      if (counter) counter.textContent = `${current + 1} / ${gallery.length}`;
+    };
+
+    const open = (index) => {
+      show(index);
+      lightbox.classList.remove('hidden');
+      lightbox.classList.add('flex');
+      document.body.style.overflow = 'hidden';
+    };
+
+    const close = () => {
+      lightbox.classList.add('hidden');
+      lightbox.classList.remove('flex');
+      document.body.style.overflow = '';
+    };
+
+    // Open on thumbnail click
+    document.querySelectorAll('.gallery-thumb').forEach(btn => {
+      btn.addEventListener('click', () => open(parseInt(btn.dataset.galleryIndex)));
+    });
+
+    // Close
+    document.getElementById('lightbox-close')?.addEventListener('click', close);
+    lightbox.addEventListener('click', (e) => {
+      if (e.target === lightbox) close();
+    });
+
+    // Nav
+    document.getElementById('lightbox-prev')?.addEventListener('click', (e) => {
+      e.stopPropagation();
+      show(current - 1);
+    });
+    document.getElementById('lightbox-next')?.addEventListener('click', (e) => {
+      e.stopPropagation();
+      show(current + 1);
+    });
+
+    // Keyboard
+    this._keyHandler = (e) => {
+      if (lightbox.classList.contains('hidden')) return;
+      if (e.key === 'Escape') close();
+      if (e.key === 'ArrowLeft') show(current - 1);
+      if (e.key === 'ArrowRight') show(current + 1);
+    };
+    document.addEventListener('keydown', this._keyHandler);
   }
 
   renderSection(number, title, section) {
     if (!section || !section.show) {
       return "";
     }
+
+    // content peut être un string ou un array de strings
+    const contentHtml = Array.isArray(section.content)
+      ? `<ul class="list-disc list-inside space-y-2 text-muted-foreground leading-relaxed">${section.content.map(item => `<li>${item}</li>`).join('')}</ul>`
+      : `<p class="text-muted-foreground leading-relaxed">${section.content}</p>`;
 
     return `
       <div class="rounded-xl border border-border bg-card p-6">
@@ -222,7 +331,7 @@ class ProjectDetail {
           </span>
           <h2 class="text-xl font-semibold text-foreground">${title}</h2>
         </div>
-        <p class="text-muted-foreground leading-relaxed">${section.content}</p>
+        ${contentHtml}
       </div>
     `;
   }

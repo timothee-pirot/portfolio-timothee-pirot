@@ -1,4 +1,5 @@
 import projectCard from './ProjectCard.js';
+import router from '../utils/Router.js';
 
 class ProjectGrid {
   constructor() {
@@ -17,11 +18,17 @@ class ProjectGrid {
       fetch('/portfolio-timothee-pirot/src/data/projects.json').then(r => r.json()),
       fetch('/portfolio-timothee-pirot/src/data/skills.json').then(r => r.json())
     ]);
-    
+
     // Extraire projects et categories
     this.projects = projectsData.projects;
     this.categories = projectsData.categories;
     this.skills = skillsData.skills;
+
+    // Lire le query param ?skill= depuis l'URL
+    const skillParam = router.getQueryParam('skill');
+    if (skillParam) {
+      this.activeSkill = skillParam;
+    }
   }
 
   render() {
@@ -125,9 +132,12 @@ class ProjectGrid {
   getFilteredProjects() {
     let result = [...this.projects];
 
-    // Category filter
+    // Category filter (category peut être un string ou un array)
     if (this.activeCategory !== 'all') {
-      result = result.filter(p => p.category === this.activeCategory);
+      result = result.filter(p => {
+        const cats = Array.isArray(p.category) ? p.category : [p.category];
+        return cats.includes(this.activeCategory);
+      });
     }
 
     // Skill filter
@@ -191,7 +201,7 @@ class ProjectGrid {
     // Update projects
     if (filtered.length > 0) {
       container.innerHTML = `
-        <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div class="grid gap-6 grid-cols-1 md:grid-cols-2">
           ${filtered.map(project => projectCard.render(project)).join('')}
         </div>
       `;

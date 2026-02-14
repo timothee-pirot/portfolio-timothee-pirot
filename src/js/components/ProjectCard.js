@@ -16,18 +16,19 @@ class ProjectCard {
   }
 
   render(project, featured = false) {
-    const statusClass = project.status === 'en-cours' 
-      ? 'bg-primary/80 text-primary-foreground' 
+    const statusClass = project.status === 'in_progress'
+      ? 'bg-primary/80 text-primary-foreground'
       : 'bg-secondary/80 text-secondary-foreground';
+
+    const statusLabel = project.status === 'in_progress' ? 'En cours' : 'Terminé';
+
+    // context peut être un string ou un array
+    const contexts = Array.isArray(project.context) ? project.context : [project.context];
     
-    const statusLabel = project.status === 'en-cours' ? 'En cours' : 'Terminé';
-    
-    const containerClass = featured 
-      ? 'group flex flex-col overflow-hidden rounded-xl border border-border bg-card transition-all hover:border-primary/50 hover:shadow-[0_0_24px_-6px_hsl(174_60%_51%/0.15)] md:flex-row'
-      : 'group flex flex-col overflow-hidden rounded-xl border border-border bg-card transition-all hover:border-primary/50 hover:shadow-[0_0_24px_-6px_hsl(174_60%_51%/0.15)]';
-    
-    const imageClass = featured 
-      ? 'relative overflow-hidden aspect-[16/10] md:aspect-auto md:w-1/2'
+    const containerClass = 'group flex flex-col overflow-hidden rounded-xl border border-border bg-card transition-all hover:border-primary/50 hover:shadow-[0_0_24px_-6px_hsl(174_60%_51%/0.15)]';
+
+    const imageClass = featured
+      ? 'relative overflow-hidden max-h-[350px]'
       : 'relative overflow-hidden aspect-[16/10]';
     
     const contentClass = featured 
@@ -70,8 +71,8 @@ class ProjectCard {
         <div class="${contentClass}">
           <div class="mb-2 flex items-center gap-2 text-xs text-muted-foreground">
             <span class="flex items-center gap-1">
-              ${this.contextIcons[project.context.toLowerCase()]}
-              ${this.contextLabels[project.context.toLowerCase()]}
+              ${contexts.map(c => `${this.contextIcons[c.toLowerCase()]}`).join('')}
+              ${contexts.map(c => this.contextLabels[c.toLowerCase()]).join(' / ')}
             </span>
             <span>/</span>
             <span class="flex items-center gap-1">

@@ -5,7 +5,7 @@
       "category": "languages",
       "type": "languages",
       "icon": "cpp-icon.svg",
-      "projectSlugs": [null],
+      "projectSlugs": ["maison-intelligente-arduino-tinkercad"],
       "origin": ["school"]
     },
     {
@@ -13,7 +13,7 @@
       "category": "languages",
       "type": "languages",
       "icon": null,
-      "projectSlugs": ["lego-technic-robotic-arm", "morpion-tkinter-python", "jeu-yinsh-python-tkinter"],
+      "projectSlugs": ["jeu-yinsh-python-tkinter", "bras-robotique-lego-v2-1", "city-idle-godot"],
       "origin": ["school", "personal"]
     },
     {
@@ -21,7 +21,7 @@
       "category": "languages",
       "type": "languages",
       "icon": null,
-      "projectSlugs": ["odyssee-du-de-java"],
+      "projectSlugs": ["odyssee-du-de-java", "odyssee-du-de-v2"],
       "origin": ["school"]
     },
     {
@@ -30,14 +30,15 @@
       "type": "languages",
       "icon": null,
       "projectSlugs": ["supemon-c-console"],
-      "origin": [null]
+      "origin": ["school"]
     },
     {
       "name": "SQL",
       "category": "languages",
       "type": "languages",
       "icon": null,
-      "projectSlugs": [null],
+      "projectSlugs": [],
+      "status": "coming-soon",
       "origin": ["school"]
     },
     {
@@ -45,7 +46,8 @@
       "category": "languages",
       "type": "languages",
       "icon": null,
-      "projectSlugs": [null],
+      "projectSlugs": [],
+      "status": "coming-soon",
       "origin": ["school"]
     },
     {
@@ -53,7 +55,8 @@
       "category": "languages",
       "type": "languages",
       "icon": null,
-      "projectSlugs": [null],
+      "projectSlugs": [],
+      "status": "coming-soon",
       "origin": ["work"]
     },
     {
@@ -61,7 +64,8 @@
       "category": "languages",
       "type": "languages",
       "icon": null,
-      "projectSlugs": [null],
+      "projectSlugs": [],
+      "status": "coming-soon",
       "origin": ["school", "personal"]
     },
     {
@@ -78,7 +82,7 @@
       "type": "framework",
       "icon": null,
       "projectSlugs": ["odyssee-du-de-java", "odyssee-du-de-v2"],
-      "origin": [null]
+      "origin": ["school"]
     },
     {
       "name": "Tkinter",
@@ -86,14 +90,15 @@
       "type": "framework",
       "icon": null,
       "projectSlugs": ["morpion-tkinter-python", "jeu-yinsh-python-tkinter"],
-      "origin": [null]
+      "origin": ["school"]
     },
     {
       "name": "React",
       "category": "frameworks",
       "type": "framework",
       "icon": null,
-      "projectSlugs": ["autre"],
+      "projectSlugs": [],
+      "status": "coming-soon",
       "origin": ["work"]
     },
     {
@@ -102,7 +107,7 @@
       "type": "tools",
       "icon": null,
       "projectSlugs": ["odyssee-du-de-java"],
-      "origin": [null]
+      "origin": ["school"]
     },
     {
       "name": "Tiled Map Editor",
@@ -110,7 +115,7 @@
       "type": "tools",
       "icon": null,
       "projectSlugs": ["odyssee-du-de-v2"],
-      "origin": [null]
+      "origin": ["school", "personal"]
     },
     {
       "name": "git & github",
@@ -126,7 +131,7 @@
       "type": "tools",
       "icon": null,
       "projectSlugs": ["odyssee-du-de-java"],
-      "origin": [null]
+      "origin": ["personal"]
     },
     {
       "name": "CATIA",
@@ -142,7 +147,7 @@
       "type": "software",
       "icon": null,
       "projectSlugs": ["city-idle-godot"],
-      "origin": [null]
+      "origin": ["school"]
     },
     {
       "name": "Gazebo",
@@ -158,7 +163,7 @@
       "type": "software",
       "icon": null,
       "projectSlugs": ["3dof-robotic-arm-simulation"],
-      "origin": [null]
+      "origin": ["personal"]
     },
     {
       "name": "Tinkercad",
@@ -166,23 +171,23 @@
       "type": "software",
       "icon": null,
       "projectSlugs": ["maison-intelligente-arduino-tinkercad"],
-      "origin": ["personal"]
+      "origin": ["school"]
     },
     {
       "name": "Impression 3D",
       "category": "engineering",
       "type": "technical",
       "icon": null,
-      "projectSlugs": ["conception-rangement-catia-3d"],
-      "origin": [null]
+      "projectSlugs": ["conception-rangement-catia-3d", "evolutek-robot"],
+      "origin": ["personal"]
     },
     {
       "name": "Mécanique / Conception",
       "category": "engineering",
       "type": "technical",
       "icon": null,
-      "projectSlugs": ["bras-robotique-lego-v2-1"],
-      "origin": [null]
+      "projectSlugs": ["bras-robotique-lego-v2-1", "evolutek-robot", "lego-technic-robotic-arm"],
+      "origin": ["personal"]
     },
     {
       "name": "Électronique / Domotique",
@@ -190,14 +195,16 @@
       "type": "technical",
       "icon": null,
       "projectSlugs": ["maison-intelligente-arduino-tinkercad"],
-      "origin": [null]
+      "origin": ["school"]
     },
     {
       "name": "Travail en équipe",
       "category": "soft-skills",
       "type": "soft-skill",
       "icon": null,
-      "projectSlugs": ["evolutek-robot"],
+      "projectSlugs": ["evolutek-robot", "supemon-c-console", 
+      "jeu-yinsh-python-tkinter", "maison-intelligente-arduino-tinkercad", 
+      "city-idle-godot", "odyssee-du-de-java"],
       "origin": ["school", "association"]
     },
     {
@@ -206,14 +213,15 @@
       "type": "technical",
       "icon": null,
       "projectSlugs": ["supemon-c-console", "jeu-yinsh-python-tkinter"],
-      "origin": [null]
+      "origin": ["school"]
     },
     {
       "name": "Suite Office",
       "category": "software",
       "type": "software",
       "icon": null,
-      "projectSlugs": ["all"],
+      "projectSlugs": [],
+      "status": "coming-soon",
       "origin": ["personal"]
     },
     {
@@ -221,7 +229,8 @@
       "category": "frameworks",
       "type": "framework",
       "icon": null,
-      "projectSlugs": ["autre"],
+      "projectSlugs": [],
+      "status": "coming-soon",
       "origin": ["personal"]
     },
     {
@@ -229,7 +238,8 @@
       "category": "frameworks",
       "type": "framework",
       "icon": null,
-      "projectSlugs": ["autre"],
+      "projectSlugs": [],
+      "status": "coming-soon",
       "origin": ["personal", "school"]
     },
     {
@@ -237,7 +247,7 @@
       "category": "tools",
       "type": "tools",
       "icon": null,
-      "projectSlugs": ["all"],
+      "projectSlugs": ["maison-intelligente-arduino-tinkercad"],
       "origin": ["school"]
     },
     {
@@ -245,7 +255,7 @@
       "category": "tools",
       "type": "tools",
       "icon": null,
-      "projectSlugs": ["all"],
+      "projectSlugs": ["odyssee-du-de-java"],
       "origin": ["school"]
     },
     {
@@ -255,7 +265,71 @@
       "icon": null,
       "projectSlugs": ["all"],
       "origin": ["school", "personal"]
-    }
+    },
+    {
+    "name": "UI/UX Design",
+    "category": "soft-skills",
+    "type": "soft-skill",
+    "icon": null,
+    "projectSlugs": ["odyssee-du-de-v2", "city-idle-godot"],
+    "origin": ["school", "personal", "work"]
+  },
+  {
+    "name": "UML",
+    "category": "tools",
+    "type": "tools",
+    "icon": null,
+    "projectSlugs": ["odyssee-du-de-java"],
+    "origin": ["school"]
+  },
+  {
+    "name": "URDF/XACRO",
+    "category": "software",
+    "type": "software",
+    "icon": null,
+    "projectSlugs": ["3dof-robotic-arm-simulation"],
+    "origin": ["personal"]
+  },
+  {
+    "name": "Linux",
+    "category": "tools",
+    "type": "tools",
+    "icon": null,
+    "projectSlugs": ["3dof-robotic-arm-simulation"],
+    "origin": ["personal"]
+  },
+  {
+  "name": "POO (Programmation Orientée Objet)",
+  "category": "soft-skills",
+  "type": "technical",
+  "icon": null,
+  "projectSlugs": ["odyssee-du-de-java", "supemon-c-console", "city-idle-godot", "odyssee-du-de-v2"],
+  "origin": ["school", "personal"]
+  },
+  {
+  "name": "ros2_control",
+  "category": "frameworks",
+  "type": "framework",
+  "icon": null,
+  "projectSlugs": ["3dof-robotic-arm-simulation"],
+  "origin": ["personal"]
+  },
+  {
+  "name": "Pybricks",
+  "category": "frameworks",
+  "type": "framework",
+  "icon": null,
+  "projectSlugs": ["bras-robotique-lego-v2-1"],
+  "origin": ["personal"]
+  },
+  {
+  "name": "Lego Hub (Technic/Spike)",
+  "category": "engineering",
+  "type": "hardware",
+  "icon": null,
+  "projectSlugs": ["bras-robotique-lego-v2-1", "lego-technic-robotic-arm"],
+  "origin": ["personal"]
+}
   ],
   "categories": [
     { "value": "all", "label": "Toutes" },

@@ -3,6 +3,7 @@ class SkillsSection {
     this.skills = [];
     this.categories = [];
     this.activeCategory = "all";
+    this.totalProjects = 0;
 
     this.originIcons = {
       school:
@@ -23,23 +24,43 @@ class SkillsSection {
   }
 
   async init() {
-    const response = await fetch(
-      "/portfolio-timothee-pirot/src/data/skills.json",
-    );
-    const data = await response.json();
-    this.skills = data.skills;
-    this.categories = data.categories;
+    const [skillsResponse, projectsResponse] = await Promise.all([
+      fetch("/portfolio-timothee-pirot/src/data/skills.json"),
+      fetch("/portfolio-timothee-pirot/src/data/projects.json"),
+    ]);
+    const skillsData = await skillsResponse.json();
+    const projectsData = await projectsResponse.json();
+    this.skills = skillsData.skills;
+    this.categories = skillsData.categories;
+    this.totalProjects = projectsData.projects.length;
+  }
+
+  getProjectCount(skill) {
+    if (skill.projectSlugs.includes("all")) {
+      return this.totalProjects;
+    }
+    return skill.projectSlugs.length;
   }
 
   renderSkillRow(skill) {
+    const isEmpty = skill.projectSlugs.length === 0;
+    const isComingSoon = skill.status === "coming-soon";
+    const projectCount = this.getProjectCount(skill);
+
+    // Si projectSlugs vide → non-cliquable (div), sinon lien
+    const tag = isEmpty ? "div" : "a";
+    const href = isEmpty ? "" : `href="#/projects?skill=${encodeURIComponent(skill.name)}"`;
+    const cursorClass = isEmpty ? "cursor-default opacity-70" : "";
+
     return `
-    <a 
-      href="#/projects?skill=${encodeURIComponent(skill.name)}"
-      class="group flex items-center justify-between gap-3 rounded-full border border-border bg-secondary/30 px-4 py-2.5 transition-all hover:border-primary hover:bg-secondary/50 hover:shadow-sm"
+    <${tag}
+      ${href}
+      class="group flex items-center justify-between gap-3 rounded-full border border-border bg-secondary/30 px-4 py-2.5 transition-all ${isEmpty ? "" : "hover:border-primary hover:bg-secondary/50 hover:shadow-sm"} ${cursorClass}"
     >
       <!-- Skill name -->
-      <span class="font-medium text-foreground transition-colors group-hover:text-primary text-sm">
+      <span class="font-medium text-foreground transition-colors ${isEmpty ? "" : "group-hover:text-primary"} text-sm flex items-center gap-1.5">
         ${skill.name}
+        ${isComingSoon ? '<span title="Donnees a venir" class="text-amber-500 text-xs">&#128679;</span>' : ""}
       </span>
 
       <div class="flex items-center gap-2 ml-auto">
@@ -58,13 +79,16 @@ class SkillsSection {
 
         <!-- Project count -->
         <div class="flex items-center gap-1 text-muted-foreground">
-          <span class="font-mono text-xs">${skill.projectSlugs.length}</span>
-          <svg class="h-3 w-3 opacity-0 transition-opacity group-hover:opacity-100" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 17L17 7m0 0H7m10 0v10" />
-          </svg>
+          ${isEmpty
+            ? '<span class="font-mono text-xs">—</span>'
+            : `<span class="font-mono text-xs">${projectCount}</span>
+               <svg class="h-3 w-3 opacity-0 transition-opacity group-hover:opacity-100" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 17L17 7m0 0H7m10 0v10" />
+               </svg>`
+          }
         </div>
       </div>
-    </a>
+    </${tag}>
   `;
   }
 

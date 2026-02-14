@@ -38,6 +38,7 @@ document.addEventListener('DOMContentLoaded', async () => {
    router.addRoute('/projects/:slug', async (params) => {
     await projectDetailPage.init(params.slug);
     appContainer.innerHTML = projectDetailPage.render();
+    projectDetailPage.attachEvents();
     window.scrollTo(0, 0);
   });
   

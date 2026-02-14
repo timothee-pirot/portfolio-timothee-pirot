@@ -1,4 +1,3 @@
-// Système de routing avec hash pour SPA
 class Router {
   constructor() {
     this.routes = {};
@@ -16,8 +15,12 @@ class Router {
 
   // Gérer le changement de route
   handleRoute() {
-    const hash = window.location.hash.slice(1) || '/';
-    
+    const fullHash = window.location.hash.slice(1) || '/';
+
+    // Séparer le path des query params
+    const [hash, queryString] = fullHash.split('?');
+    this.queryParams = new URLSearchParams(queryString || '');
+
     // Chercher une route exacte
     if (this.routes[hash]) {
       this.currentRoute = hash;
@@ -40,6 +43,11 @@ class Router {
       this.currentRoute = '/';
       this.routes['/']();
     }
+  }
+
+  // Obtenir un query param (ex: router.getQueryParam('skill'))
+  getQueryParam(key) {
+    return this.queryParams ? this.queryParams.get(key) : null;
   }
 
   // Matcher une route avec paramètres (ex: /projects/:slug)
