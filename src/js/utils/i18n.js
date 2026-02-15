@@ -6,9 +6,10 @@ class I18n {
   }
 
   async init() {
+    const base = import.meta.env.BASE_URL;
     const [fr, en] = await Promise.all([
-      fetch('/portfolio-timothee-pirot/src/data/fr/ui.json').then(r => r.json()),
-      fetch('/portfolio-timothee-pirot/src/data/en/ui.json').then(r => r.json())
+      fetch(`${base}data/fr/ui.json`).then(r => r.json()),
+      fetch(`${base}data/en/ui.json`).then(r => r.json())
     ]);
     this.translations = { fr, en };
     document.documentElement.lang = this.locale;
@@ -41,7 +42,7 @@ class I18n {
 
   // Get locale-aware data path for fetch calls
   getDataPath(filename) {
-    return `/portfolio-timothee-pirot/src/data/${this.locale}/${filename}`;
+    return `${import.meta.env.BASE_URL}data/${this.locale}/${filename}`;
   }
 
   setLocale(locale) {
