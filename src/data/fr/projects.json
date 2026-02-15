@@ -12,12 +12,10 @@
       },
       "status": "in_progress",
       "duration": "En cours",
-      "thumbnail": "/portfolio-timothee-pirot/public/assets/images/projets/img-blanc.png",
+      "thumbnail": "/portfolio-timothee-pirot/public/assets/images/projets/odyssee-du-de-v2/pres_odyssee_V2.webp",
       "gallery": [
-        "/portfolio-timothee-pirot/public/assets/images/projets/img-blanc.png",
-        "/portfolio-timothee-pirot/public/assets/images/projets/img-blanc.png",
-        "/portfolio-timothee-pirot/public/assets/images/projets/img-blanc.png",
-        "/portfolio-timothee-pirot/public/assets/images/projets/img-blanc.png"
+        "/portfolio-timothee-pirot/public/assets/images/projets/odyssee-du-de-v2/pres_odyssee_V2.webp"
+        
       ],
       "snippet": "Refonte majeure du moteur de jeu : intégration de Tiled pour le level design, export Web et refonte complète de l'expérience utilisateur.",
       "skills": ["Java", "LibGDX", "Tiled Map Editor", "UI/UX Design"],
@@ -59,7 +57,7 @@
     ,{
       "slug": "conception-rangement-catia-3d",
       "title": "Système de Rangement Modulaire",
-      "category": "conception mécanique",
+      "category": "cao",
       "context": ["personal", "association"],
       "dates": {
         "year": 2026,
@@ -112,9 +110,9 @@
       },
       "status": "in_progress",
       "duration": "8 mois",
-      "thumbnail": "/portfolio-timothee-pirot/public/assets/images/projets/img-blanc.png",
+      "thumbnail": "/portfolio-timothee-pirot/public/assets/images/projets/evo-robot/pres-evolutek.webp",
       "gallery": [
-        "/portfolio-timothee-pirot/public/assets/images/projets/img-blanc.png"
+        "/portfolio-timothee-pirot/public/assets/images/projets/evo-robot/pres-evolutek.webp"
       ],
       "snippet": "Modélisation 3D des actionneurs",
       "skills": ["CATIA", "Mécanique", "Impression 3D", "Travail en équipe"],
@@ -156,9 +154,9 @@
       },
       "status": "completed",
       "duration": "3 semaines",
-      "thumbnail": "/portfolio-timothee-pirot/public/assets/images/projets/img-blanc.png",
+      "thumbnail": "/portfolio-timothee-pirot/public/assets/images/projets/odysee-du-de-java/pres_odyssee.webp",
       "gallery": [
-        "/portfolio-timothee-pirot/public/assets/images/projets/img-blanc.png"
+        "/portfolio-timothee-pirot/public/assets/images/projets/odysee-du-de-java/pres_odyssee.webp"
       ],
       "snippet": "Réinvention moderne du Ludo sous Java/LibGDX, intégrant un système d'événements mystères, une IA tactique et une architecture modulaire documentée.",
       "skills": ["Java", "LibGDX", "JUnit", "POO", "Gradle", "UML", "Travail en équipe"],
@@ -200,9 +198,9 @@
       },
       "status": "completed",
       "duration": "3 semaines",
-      "thumbnail": "/portfolio-timothee-pirot/public/assets/images/projets/img-blanc.png",
+      "thumbnail": "/portfolio-timothee-pirot/public/assets/images/projets/3dof-ros2/pres_ros2.webp",
       "gallery": [
-        "/portfolio-timothee-pirot/public/assets/images/projets/img-blanc.png"
+        "/portfolio-timothee-pirot/public/assets/images/projets/3dof-ros2/pres_ros2.webp"
       ],
       "snippet": "Simulation complète d'un bras articulé à 3 degrés de liberté sous ROS 2, incluant modélisation URDF et contrôle d'actionneurs.",
       "skills": ["ROS2", "Gazebo", "Rviz", "URDF/XACRO", "ros2_control", "Linux"],
@@ -245,9 +243,11 @@
       },
       "status": "completed",
       "duration": "6 mois (itération v2.1)",
-      "thumbnail": "/portfolio-timothee-pirot/public/assets/images/projets/img-blanc.png",
+      "thumbnail": "/portfolio-timothee-pirot/public/assets/images/projets/bras-robotique-lego-v2/pres_lego.webp",
       "gallery": [
-        "/portfolio-timothee-pirot/public/assets/images/projets/img-blanc.png"
+        "/portfolio-timothee-pirot/public/assets/images/projets/bras-robotique-lego-v2/pres_lego.webp",
+        "/portfolio-timothee-pirot/public/assets/images/projets/bras-robotique-lego-v2/lego_V2.webp",
+        "/portfolio-timothee-pirot/public/assets/images/projets/bras-robotique-lego-v2/lego_V2_pince.webp"
       ],
       "snippet": "Évolution majeure d'un bras robotique autonome : optimisation de la structure mécanique et pilotage avancé via Python et Hub intelligent.",
       "skills": [
@@ -295,9 +295,9 @@
       },
       "status": "completed",
       "duration": "5 mois",
-      "thumbnail": "/portfolio-timothee-pirot/public/assets/images/projets/img-blanc.png",
+      "thumbnail": "/portfolio-timothee-pirot/public/assets/images/projets/city-idle-godot/pres_godot.webp",
       "gallery": [
-        "/portfolio-timothee-pirot/public/assets/images/projets/img-blanc.png"
+        "/portfolio-timothee-pirot/public/assets/images/projets/city-idle-godot/pres_godot.webp"
       ],
       "snippet": "Jeu de gestion et de construction (Idle Game) développé avec Godot, retraçant l'évolution d'une cité de la préhistoire à l'ère moderne.",
       "skills": ["Godot Engine", "Game Design", "Python", "Travail en équipe"],
@@ -339,9 +339,9 @@
       },
       "status": "completed",
       "duration": "2 semaines",
-      "thumbnail": "/portfolio-timothee-pirot/public/assets/images/projets/img-blanc.png",
+      "thumbnail": "/portfolio-timothee-pirot/public/assets/images/projets/maison-domotique/pres_tinkercad.webp",
       "gallery": [
-        "/portfolio-timothee-pirot/public/assets/images/projets/img-blanc.png"
+        "/portfolio-timothee-pirot/public/assets/images/projets/maison-domotique/projet-domotique.webp"
       ],
       "snippet": "Simulation d'un système domotique complet sous Tinkercad, incluant la gestion automatisée du chauffage, des volets et de la ventilation (VMC).",
       "skills": ["C++", "Arduino", "Tinkercad", "Électronique", "Domotique", "Travail en équipe"],
@@ -383,9 +383,9 @@
       },
       "status": "completed",
       "duration": "1 mois",
-      "thumbnail": "/portfolio-timothee-pirot/public/assets/images/projets/img-blanc.png",
+      "thumbnail": "/portfolio-timothee-pirot/public/assets/images/projets/supemon-console/pres_supemon.webp",
       "gallery": [
-        "/portfolio-timothee-pirot/public/assets/images/projets/img-blanc.png"
+        "/portfolio-timothee-pirot/public/assets/images/projets/supemon-console/pres_supemon.webp"
       ],
       "snippet": "Jeu de rôle en C avec affichage console, incluant un système de combat au tour par tour et une gestion de sauvegarde.",
       "skills": ["C", "Algorithmique", "POO", "Travail en équipe"],
@@ -427,9 +427,10 @@
       },
       "status": "completed",
       "duration": "2 an",
-      "thumbnail": "/portfolio-timothee-pirot/public/assets/images/projets/img-blanc.png",
+      "thumbnail": "/portfolio-timothee-pirot/public/assets/images/projets/lego-technic-robotic-arm/pres_lego.webp",
       "gallery": [
-        "/portfolio-timothee-pirot/public/assets/images/projets/img-blanc.png"
+        "/portfolio-timothee-pirot/public/assets/images/projets/lego-technic-robotic-arm/Picture 1.webp",
+        "/portfolio-timothee-pirot/public/assets/images/projets/lego-technic-robotic-arm/Picture 4.webp"
       ],
       "snippet": "Conception d'un bras articulé avec moteur utilisant l'écosystème Lego Technique.",
       "skills": [

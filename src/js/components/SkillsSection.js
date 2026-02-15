@@ -1,3 +1,5 @@
+import i18n from '../utils/i18n.js';
+
 class SkillsSection {
   constructor() {
     this.skills = [];
@@ -14,19 +16,21 @@ class SkillsSection {
         '<svg class="h-3.5 w-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" /></svg>',
       work: '<svg class="h-3.5 w-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>',
     };
+  }
 
-    this.originLabels = {
-      school: "École",
-      personal: "Personnel",
-      association: "Association",
-      work: "Professionnel",
+  get originLabels() {
+    return {
+      school: i18n.t('skills.legendSchool'),
+      personal: i18n.t('skills.legendPersonal'),
+      association: i18n.t('skills.legendAssociation'),
+      work: i18n.t('skills.legendWork'),
     };
   }
 
   async init() {
     const [skillsResponse, projectsResponse] = await Promise.all([
-      fetch("/portfolio-timothee-pirot/src/data/skills.json"),
-      fetch("/portfolio-timothee-pirot/src/data/projects.json"),
+      fetch(i18n.getDataPath('skills.json')),
+      fetch(i18n.getDataPath('projects.json')),
     ]);
     const skillsData = await skillsResponse.json();
     const projectsData = await projectsResponse.json();
@@ -47,7 +51,6 @@ class SkillsSection {
     const isComingSoon = skill.status === "coming-soon";
     const projectCount = this.getProjectCount(skill);
 
-    // Si projectSlugs vide → non-cliquable (div), sinon lien
     const tag = isEmpty ? "div" : "a";
     const href = isEmpty ? "" : `href="#/projects?skill=${encodeURIComponent(skill.name)}"`;
     const cursorClass = isEmpty ? "cursor-default opacity-70" : "";
@@ -60,7 +63,7 @@ class SkillsSection {
       <!-- Skill name -->
       <span class="font-medium text-foreground transition-colors ${isEmpty ? "" : "group-hover:text-primary"} text-sm flex items-center gap-1.5">
         ${skill.name}
-        ${isComingSoon ? '<span title="Donnees a venir" class="text-amber-500 text-xs">&#128679;</span>' : ""}
+        ${isComingSoon ? `<span title="${i18n.t('skills.dataComingSoon')}" class="text-amber-500 text-xs">&#128679;</span>` : ""}
       </span>
 
       <div class="flex items-center gap-2 ml-auto">
@@ -93,18 +96,17 @@ class SkillsSection {
   }
 
   formatType(type) {
-    const types = {
-      language: "Langage",
-      tool: "Outil",
-      framework: "Framework",
-      software: "Logiciel",
-      "soft-skill": "Soft Skill",
+    const map = {
+      language: 'skills.typeLanguage',
+      tool: 'skills.typeTool',
+      framework: 'skills.typeFramework',
+      software: 'skills.typeSoftware',
+      'soft-skill': 'skills.typeSoftSkill',
     };
-    return types[type] || type;
+    return map[type] ? i18n.t(map[type]) : type;
   }
 
   renderCategoryCard(category, categorySkills) {
-    // Trier par nombre de projets (optionnel)
     const sorted = [...categorySkills].sort(
       (a, b) => b.projectSlugs.length - a.projectSlugs.length,
     );
@@ -145,13 +147,13 @@ class SkillsSection {
           <!-- Header -->
           <div class="mb-12">
             <p class="mb-2 font-mono text-sm tracking-wider text-primary">
-              // compétences
+              ${i18n.t('skills.commentTag')}
             </p>
             <h2 class="text-balance text-3xl font-bold text-foreground md:text-4xl">
-              Compétences techniques
+              ${i18n.t('skills.title')}
             </h2>
             <p class="mt-3 max-w-xl leading-relaxed text-muted-foreground">
-              Chaque compétence est ancrée dans des projets concrets. Cliquez sur une ligne pour découvrir les projets associés.
+              ${i18n.t('skills.subtitle')}
             </p>
           </div>
 
@@ -186,19 +188,19 @@ class SkillsSection {
             <div class="flex items-center gap-4">
               <div class="flex items-center gap-1.5">
                 ${this.originIcons.school}
-                <span>École</span>
+                <span>${i18n.t('skills.legendSchool')}</span>
               </div>
               <div class="flex items-center gap-1.5">
                 ${this.originIcons.personal}
-                <span>Personnel</span>
+                <span>${i18n.t('skills.legendPersonal')}</span>
               </div>
               <div class="flex items-center gap-1.5">
                 ${this.originIcons.association}
-                <span>Association</span>
+                <span>${i18n.t('skills.legendAssociation')}</span>
               </div>
                 <div class="flex items-center gap-1.5">
                 ${this.originIcons.work}
-                <span>Expéricence Professionel</span>
+                <span>${i18n.t('skills.legendWork')}</span>
               </div>
             </div>
           </div>

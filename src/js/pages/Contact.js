@@ -1,4 +1,5 @@
 import footer from '../components/Footer.js';
+import i18n from '../utils/i18n.js';
 
 class Contact {
   render() {
@@ -28,13 +29,13 @@ class Contact {
       <div class="pt-20 container mx-auto px-6 py-24 min-h-[60vh] flex items-center justify-center">
         <div class="text-center max-w-2xl w-full">
           <p class="mb-2 font-mono text-sm tracking-wider text-primary">
-            // contact
+            ${i18n.t('contact.commentTag')}
           </p>
           <h1 class="text-4xl font-bold text-foreground mb-4">
-            Me contacter
+            ${i18n.t('contact.title')}
           </h1>
           <p class="text-lg text-muted-foreground mb-12">
-            Une question, une opportunité ? N'hésitez pas à me contacter.
+            ${i18n.t('contact.subtitle')}
           </p>
 
           <div class="grid gap-4 sm:grid-cols-3 max-w-xl mx-auto">

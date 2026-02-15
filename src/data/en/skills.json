@@ -1,0 +1,343 @@
+{
+  "skills": [
+    {
+      "name": "C++",
+      "category": "languages",
+      "type": "languages",
+      "icon": "cpp-icon.svg",
+      "projectSlugs": ["maison-intelligente-arduino-tinkercad"],
+      "origin": ["school"]
+    },
+    {
+      "name": "Python",
+      "category": "languages",
+      "type": "languages",
+      "icon": null,
+      "projectSlugs": ["jeu-yinsh-python-tkinter", "bras-robotique-lego-v2-1", "city-idle-godot"],
+      "origin": ["school", "personal"]
+    },
+    {
+      "name": "Java",
+      "category": "languages",
+      "type": "languages",
+      "icon": null,
+      "projectSlugs": ["odyssee-du-de-java", "odyssee-du-de-v2"],
+      "origin": ["school"]
+    },
+    {
+      "name": "C",
+      "category": "languages",
+      "type": "languages",
+      "icon": null,
+      "projectSlugs": ["supemon-c-console"],
+      "origin": ["school"]
+    },
+    {
+      "name": "SQL",
+      "category": "languages",
+      "type": "languages",
+      "icon": null,
+      "projectSlugs": [],
+      "status": "coming-soon",
+      "origin": ["school"]
+    },
+    {
+      "name": "Javascript",
+      "category": "languages",
+      "type": "languages",
+      "icon": null,
+      "projectSlugs": [],
+      "status": "coming-soon",
+      "origin": ["school"]
+    },
+    {
+      "name": "TypeScript",
+      "category": "languages",
+      "type": "languages",
+      "icon": null,
+      "projectSlugs": [],
+      "status": "coming-soon",
+      "origin": ["work"]
+    },
+    {
+      "name": "HTML/CSS",
+      "category": "languages",
+      "type": "languages",
+      "icon": null,
+      "projectSlugs": [],
+      "status": "coming-soon",
+      "origin": ["school", "personal"]
+    },
+    {
+      "name": "ROS 2 Jazzy",
+      "category": "frameworks",
+      "type": "framework",
+      "icon": "ros-icon.svg",
+      "projectSlugs": ["3dof-robotic-arm-simulation"],
+      "origin": ["personal"]
+    },
+    {
+      "name": "LibGDX",
+      "category": "frameworks",
+      "type": "framework",
+      "icon": null,
+      "projectSlugs": ["odyssee-du-de-java", "odyssee-du-de-v2"],
+      "origin": ["school"]
+    },
+    {
+      "name": "Tkinter",
+      "category": "frameworks",
+      "type": "framework",
+      "icon": null,
+      "projectSlugs": ["morpion-tkinter-python", "jeu-yinsh-python-tkinter"],
+      "origin": ["school"]
+    },
+    {
+      "name": "React",
+      "category": "frameworks",
+      "type": "framework",
+      "icon": null,
+      "projectSlugs": [],
+      "status": "coming-soon",
+      "origin": ["work"]
+    },
+    {
+      "name": "JUnit",
+      "category": "tools",
+      "type": "tools",
+      "icon": null,
+      "projectSlugs": ["odyssee-du-de-java"],
+      "origin": ["school"]
+    },
+    {
+      "name": "Tiled Map Editor",
+      "category": "tools",
+      "type": "tools",
+      "icon": null,
+      "projectSlugs": ["odyssee-du-de-v2"],
+      "origin": ["school", "personal"]
+    },
+    {
+      "name": "git & github",
+      "category": "tools",
+      "type": "tools",
+      "icon": null,
+      "projectSlugs": ["all"],
+      "origin": ["school", "personal"]
+    },
+    {
+      "name": "Gradle",
+      "category": "tools",
+      "type": "tools",
+      "icon": null,
+      "projectSlugs": ["odyssee-du-de-java"],
+      "origin": ["personal"]
+    },
+    {
+      "name": "CATIA",
+      "category": "software",
+      "type": "software",
+      "icon": "catia-icon.svg",
+      "projectSlugs": ["evolutek-robot", "conception-rangement-catia-3d"],
+      "origin": ["association"]
+    },
+    {
+      "name": "Godot Engine",
+      "category": "software",
+      "type": "software",
+      "icon": null,
+      "projectSlugs": ["city-idle-godot"],
+      "origin": ["school"]
+    },
+    {
+      "name": "Gazebo",
+      "category": "software",
+      "type": "software",
+      "icon": null,
+      "projectSlugs": ["3dof-robotic-arm-simulation"],
+      "origin": ["personal"]
+    },
+    {
+      "name": "Rviz",
+      "category": "software",
+      "type": "software",
+      "icon": null,
+      "projectSlugs": ["3dof-robotic-arm-simulation"],
+      "origin": ["personal"]
+    },
+    {
+      "name": "Tinkercad",
+      "category": "software",
+      "type": "software",
+      "icon": null,
+      "projectSlugs": ["maison-intelligente-arduino-tinkercad"],
+      "origin": ["school"]
+    },
+    {
+      "name": "3D Printing",
+      "category": "engineering",
+      "type": "technical",
+      "icon": null,
+      "projectSlugs": ["conception-rangement-catia-3d", "evolutek-robot"],
+      "origin": ["personal"]
+    },
+    {
+      "name": "Mechanics / CAD",
+      "category": "engineering",
+      "type": "technical",
+      "icon": null,
+      "projectSlugs": ["bras-robotique-lego-v2-1", "evolutek-robot", "lego-technic-robotic-arm"],
+      "origin": ["personal"]
+    },
+    {
+      "name": "Electronics / Home Automation",
+      "category": "engineering",
+      "type": "technical",
+      "icon": null,
+      "projectSlugs": ["maison-intelligente-arduino-tinkercad"],
+      "origin": ["school"]
+    },
+    {
+      "name": "Teamwork",
+      "category": "soft-skills",
+      "type": "soft-skill",
+      "icon": null,
+      "projectSlugs": ["evolutek-robot", "supemon-c-console", 
+      "jeu-yinsh-python-tkinter", "maison-intelligente-arduino-tinkercad", 
+      "city-idle-godot", "odyssee-du-de-java"],
+      "origin": ["school", "association"]
+    },
+    {
+      "name": "Algorithms",
+      "category": "soft-skills",
+      "type": "technical",
+      "icon": null,
+      "projectSlugs": ["supemon-c-console", "jeu-yinsh-python-tkinter"],
+      "origin": ["school"]
+    },
+    {
+      "name": "Office Suite",
+      "category": "software",
+      "type": "software",
+      "icon": null,
+      "projectSlugs": [],
+      "status": "coming-soon",
+      "origin": ["personal"]
+    },
+    {
+      "name": "TailWind",
+      "category": "frameworks",
+      "type": "framework",
+      "icon": null,
+      "projectSlugs": [],
+      "status": "coming-soon",
+      "origin": ["personal"]
+    },
+    {
+      "name": "Bootstrap",
+      "category": "frameworks",
+      "type": "framework",
+      "icon": null,
+      "projectSlugs": [],
+      "status": "coming-soon",
+      "origin": ["personal", "school"]
+    },
+    {
+      "name": "Arduino",
+      "category": "tools",
+      "type": "tools",
+      "icon": null,
+      "projectSlugs": ["maison-intelligente-arduino-tinkercad"],
+      "origin": ["school"]
+    },
+    {
+      "name": "JavaDoc",
+      "category": "tools",
+      "type": "tools",
+      "icon": null,
+      "projectSlugs": ["odyssee-du-de-java"],
+      "origin": ["school"]
+    },
+    {
+      "name": "VS Code",
+      "category": "tools",
+      "type": "tools",
+      "icon": null,
+      "projectSlugs": ["all"],
+      "origin": ["school", "personal"]
+    },
+    {
+    "name": "UI/UX Design",
+    "category": "soft-skills",
+    "type": "soft-skill",
+    "icon": null,
+    "projectSlugs": ["odyssee-du-de-v2", "city-idle-godot"],
+    "origin": ["school", "personal", "work"]
+  },
+  {
+    "name": "UML",
+    "category": "tools",
+    "type": "tools",
+    "icon": null,
+    "projectSlugs": ["odyssee-du-de-java"],
+    "origin": ["school"]
+  },
+  {
+    "name": "URDF/XACRO",
+    "category": "software",
+    "type": "software",
+    "icon": null,
+    "projectSlugs": ["3dof-robotic-arm-simulation"],
+    "origin": ["personal"]
+  },
+  {
+    "name": "Linux",
+    "category": "tools",
+    "type": "tools",
+    "icon": null,
+    "projectSlugs": ["3dof-robotic-arm-simulation"],
+    "origin": ["personal"]
+  },
+  {
+  "name": "OOP (Object-Oriented Programming)",
+  "category": "soft-skills",
+  "type": "technical",
+  "icon": null,
+  "projectSlugs": ["odyssee-du-de-java", "supemon-c-console", "city-idle-godot", "odyssee-du-de-v2"],
+  "origin": ["school", "personal"]
+  },
+  {
+  "name": "ros2_control",
+  "category": "frameworks",
+  "type": "framework",
+  "icon": null,
+  "projectSlugs": ["3dof-robotic-arm-simulation"],
+  "origin": ["personal"]
+  },
+  {
+  "name": "Pybricks",
+  "category": "frameworks",
+  "type": "framework",
+  "icon": null,
+  "projectSlugs": ["bras-robotique-lego-v2-1"],
+  "origin": ["personal"]
+  },
+  {
+  "name": "Lego Hub (Technic/Spike)",
+  "category": "engineering",
+  "type": "hardware",
+  "icon": null,
+  "projectSlugs": ["bras-robotique-lego-v2-1", "lego-technic-robotic-arm"],
+  "origin": ["personal"]
+}
+  ],
+  "categories": [
+    { "value": "all", "label": "All" },
+    { "value": "languages", "label": "Languages", "color": "#3B82F6" },
+    { "value": "tools", "label": "Tools", "color": "#10B981" },
+    { "value": "frameworks", "label": "Frameworks", "color": "#F59E0B" },
+    { "value": "software", "label": "Software", "color": "#8B5CF6" },
+    { "value": "engineering", "label": "Engineering / Tech", "color": "#F97316" },
+    { "value": "soft-skills", "label": "Soft Skills", "color": "#EC4899" }
+  ]
+}

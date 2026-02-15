@@ -1,26 +1,17 @@
 {
   "availability": {
-    "status": "available",
-    "type": "alternance",
-    "duration": "31 mois",
-    "startDate": "Immédiat",
-    "fields": [
-      "Robotique, Systèmes Embarqués & IoT",
-      "Développement"
-    ]
+    "startDate": { "fr": "Dès septembre", "en": "In Septembe" }
   },
   "headline": {
-    "fr": "En recherche d'une alternance de 31 mois en robotique, systèmes embarqués & IoT, ou en développement",
-    "en": "Seeking 31-month apprenticeship in Robotics, Embedded Systems & IoT, or Development"
-  },
-  "shortHeadline": {
-    "fr": "Alternance • Robotique & Développement • 31 mois",
-    "en": "Apprenticeship • Robotics & Development • 31 months"
+    "fr": "En recherche d'une alternance de 24 mois en robotique, systèmes embarqués ou en développement",
+    "en": "Seeking a 24-month apprenticeship in robotics, embedded systems or development"
   },
   "presentation": {
-    "fr": "J'ai 24 ans, je suis franco-allemand et étudiant en Bac+3 (pré-MSc) chez EPITECH Paris. Je suis passionné de robotique, de systèmes embarqués, de modélisation et d'impression 3D, ainsi que de Lego depuis toujours."
+    "fr": "Bonjour ! J'ai 24 ans, je suis franco-allemand et étudiant en Bac+3 (pré-MSc) chez EPITECH Paris. Passionné par l'intersection entre le matériel et le logiciel, je m'intéresse particulièrement à la robotique et aux systèmes embarqués, tout en développant mes compétences en développement logiciel. J'aime aussi concrétiser mes idées par la modélisation et l'impression 3D.",
+    "en": "Hello! I'm 24 years old, Franco-German, and currently a third-year student (Bac+3) at EPITECH Paris. Passionate about the intersection of hardware and software, I'm particularly interested in robotics and embedded systems, while developing my skills in software development. I also enjoy bringing my ideas to life through 3D modeling and printing."
   },
   "mobility": {
-    "fr": "Mobile en France et en Allemange"
+    "fr": "Mobile en France et en Allemagne",
+    "en": "Mobile across France and Germany."
   }
 }

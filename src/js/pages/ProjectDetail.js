@@ -1,4 +1,6 @@
 import footer from "../components/Footer.js";
+import i18n from '../utils/i18n.js';
+
 
 class ProjectDetail {
   constructor() {
@@ -13,17 +15,19 @@ class ProjectDetail {
         '<svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" /></svg>',
       work: '<svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>',
     };
+  }
 
-    this.contextLabels = {
-      school: "École",
-      personal: "Personnel",
-      association: "Association",
-      work: "Professionnel",
+  get contextLabels() {
+    return {
+      school: i18n.t('projectCard.contextSchool'),
+      personal: i18n.t('projectCard.contextPersonal'),
+      association: i18n.t('projectCard.contextAssociation'),
+      work: i18n.t('projectCard.contextWork'),
     };
   }
 
   async init(slug) {
-    const response = await fetch("/portfolio-timothee-pirot/src/data/projects.json");
+    const response = await fetch(i18n.getDataPath('projects.json'));
     const data = await response.json();
     this.project = data.projects.find((p) => p.slug === slug);
 
@@ -37,10 +41,10 @@ class ProjectDetail {
       return `
         <div class="pt-20 container mx-auto px-6 py-24 min-h-[60vh] flex items-center justify-center">
           <div class="text-center">
-            <h1 class="text-4xl font-bold text-foreground mb-4">Projet non trouvé</h1>
-            <p class="text-lg text-muted-foreground mb-8">Le projet que vous recherchez n'existe pas.</p>
+            <h1 class="text-4xl font-bold text-foreground mb-4">${i18n.t('projectDetail.notFoundTitle')}</h1>
+            <p class="text-lg text-muted-foreground mb-8">${i18n.t('projectDetail.notFoundText')}</p>
             <a href="#/projects" class="inline-flex items-center gap-2 text-primary hover:underline">
-              ← Retour aux projets
+              ← ${i18n.t('projectDetail.backToProjects')}
             </a>
           </div>
         </div>
@@ -50,7 +54,7 @@ class ProjectDetail {
 
     const year = this.project.dates?.year || this.project.year || 2025;
     const statusClass = this.project.status === "in_progress" ? "bg-primary text-primary-foreground" : "bg-secondary text-secondary-foreground";
-    const statusLabel = this.project.status === "in_progress" ? "En cours" : "Terminé";
+    const statusLabel = this.project.status === "in_progress" ? i18n.t('projectCard.statusInProgress') : i18n.t('projectCard.statusCompleted');
 
     // context peut être un string ou un array
     const contexts = Array.isArray(this.project.context) ? this.project.context : [this.project.context];
@@ -65,7 +69,7 @@ class ProjectDetail {
           <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
           </svg>
-          Retour aux projets
+          ${i18n.t('projectDetail.backToProjects')}
         </a>
 
         <!-- Project header -->
@@ -96,7 +100,7 @@ class ProjectDetail {
         <!-- Main image -->
         ${this.project.thumbnail ? `
           <div class="mb-12 rounded-xl overflow-hidden border border-border">
-            <img src="${this.project.thumbnail}" alt="${this.project.title}" class="w-full max-h-[500px] object-cover" />
+            <img src="${this.project.thumbnail}" alt="${this.project.title}" class="w-full max-h-[500px] object-contain" />
           </div>
         ` : ""}
 
@@ -106,17 +110,17 @@ class ProjectDetail {
           <div class="lg:col-span-2">
             <!-- Description sections -->
             <div class="grid gap-8">
-              ${this.renderSection("01", "Contexte", this.project.description.contexte)}
-              ${this.renderSection("02", "Challenge", this.project.description.challenge)}
-              ${this.renderSection("03", "Solution", this.project.description.solution)}
-              ${this.renderSection("04", "Résultats", this.project.description.results)}
-              ${this.renderSection("05", "Compétences", this.project.description.competences)}
+              ${this.renderSection("01", i18n.t('projectDetail.sectionContexte'), this.project.description.contexte)}
+              ${this.renderSection("02", i18n.t('projectDetail.sectionChallenge'), this.project.description.challenge)}
+              ${this.renderSection("03", i18n.t('projectDetail.sectionSolution'), this.project.description.solution)}
+              ${this.renderSection("04", i18n.t('projectDetail.sectionResults'), this.project.description.results)}
+              ${this.renderSection("05", i18n.t('projectDetail.sectionCompetences'), this.project.description.competences)}
             </div>
 
             <!-- Gallery -->
             ${this.project.gallery && this.project.gallery.length > 0 ? `
               <div class="mt-16">
-                <h2 class="text-2xl font-bold text-foreground mb-6">Galerie</h2>
+                <h2 class="text-2xl font-bold text-foreground mb-6">${i18n.t('projectDetail.gallery')}</h2>
                 <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
                   ${this.project.gallery.map((img, i) => `
                     <button type="button" data-gallery-index="${i}" class="gallery-thumb rounded-lg overflow-hidden border border-border hover:border-primary/50 transition-colors cursor-pointer">
@@ -134,28 +138,28 @@ class ProjectDetail {
               <!-- Informations card -->
               <div class="rounded-xl border border-border bg-card p-5">
                 <h3 class="text-xs font-semibold uppercase tracking-wider text-muted-foreground mb-4">
-                  Informations
+                  ${i18n.t('projectDetail.infoTitle')}
                 </h3>
                 <div class="flex flex-col gap-3">
                   <div class="flex items-center justify-between">
-                    <span class="text-sm text-muted-foreground">Statut</span>
+                    <span class="text-sm text-muted-foreground">${i18n.t('projectDetail.infoStatus')}</span>
                     <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs ${statusClass}">
                       ${statusLabel}
                     </span>
                   </div>
                   <div class="flex items-center justify-between">
-                    <span class="text-sm text-muted-foreground">Contexte</span>
+                    <span class="text-sm text-muted-foreground">${i18n.t('projectDetail.infoContext')}</span>
                     <span class="inline-flex items-center gap-1.5 text-sm text-foreground">
                       ${contexts.map(c => this.contextIcons[c.toLowerCase()]).join('')}
                       ${contexts.map(c => this.contextLabels[c.toLowerCase()]).join(' / ')}
                     </span>
                   </div>
                   <div class="flex items-center justify-between">
-                    <span class="text-sm text-muted-foreground">Année</span>
+                    <span class="text-sm text-muted-foreground">${i18n.t('projectDetail.infoYear')}</span>
                     <span class="text-sm text-foreground">${year}</span>
                   </div>
                   <div class="flex items-center justify-between">
-                    <span class="text-sm text-muted-foreground">Durée</span>
+                    <span class="text-sm text-muted-foreground">${i18n.t('projectDetail.infoDuration')}</span>
                     <span class="text-sm text-foreground">${this.project.duration}</span>
                   </div>
                 </div>
@@ -164,7 +168,7 @@ class ProjectDetail {
               <!-- Skills card -->
               <div class="rounded-xl border border-border bg-card p-5">
                 <h3 class="text-xs font-semibold uppercase tracking-wider text-muted-foreground mb-4">
-                  Compétences
+                  ${i18n.t('projectDetail.skillsTitle')}
                 </h3>
                 <div class="flex flex-wrap gap-2">
                   ${this.project.skills.map(skill => `
@@ -180,7 +184,7 @@ class ProjectDetail {
               ${validLinks.length > 0 ? `
                 <div class="rounded-xl border border-border bg-card p-5">
                   <h3 class="text-xs font-semibold uppercase tracking-wider text-muted-foreground mb-4">
-                    Liens
+                    ${i18n.t('projectDetail.linksTitle')}
                   </h3>
                   <div class="flex flex-col gap-2">
                     ${validLinks.map(link => `
@@ -206,7 +210,7 @@ class ProjectDetail {
         <!-- Back to projects -->
         <div class="mt-16 pt-8 border-t border-border">
           <a href="#/projects" class="inline-flex items-center gap-2 text-primary hover:underline">
-            ← Voir tous les projets
+            ← ${i18n.t('projectDetail.viewAllProjects')}
           </a>
         </div>
       </div>

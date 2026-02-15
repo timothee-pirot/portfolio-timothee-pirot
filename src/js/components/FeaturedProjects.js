@@ -1,4 +1,5 @@
 import projectCard from './ProjectCard.js';
+import i18n from '../utils/i18n.js';
 
 class FeaturedProjects {
   constructor() {
@@ -6,14 +7,14 @@ class FeaturedProjects {
   }
 
   async init() {
-    const response = await fetch('/portfolio-timothee-pirot/src/data/projects.json');
+    const response = await fetch(i18n.getDataPath('projects.json'));
     const data = await response.json();
     this.projects = data.projects;
   }
 
   render() {
     const featuredProjects = this.projects.slice(0, 4);
-    
+
     if (featuredProjects.length === 0) {
       return '';
     }
@@ -24,17 +25,17 @@ class FeaturedProjects {
           <div class="mb-12 flex items-end justify-between">
             <div>
               <p class="mb-2 font-mono text-sm tracking-wider text-primary">
-                // Projets
+                ${i18n.t('featured.commentTag')}
               </p>
               <h2 class="text-3xl font-bold text-foreground md:text-4xl">
-                Projets mis en avant
+                ${i18n.t('featured.title')}
               </h2>
             </div>
-            
+
               <a href="#/projects"
               class="hidden items-center gap-1 text-sm text-muted-foreground transition-colors hover:text-primary md:flex"
             >
-              Voir tous les projets
+              ${i18n.t('featured.viewAll')}
               <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
               </svg>
@@ -55,11 +56,11 @@ class FeaturedProjects {
           </div>
 
           <div class="mt-8 flex justify-center md:hidden">
-            
+
               <a href="#/projects"
               class="inline-flex items-center gap-1 rounded-lg border border-border px-5 py-2.5 text-sm text-foreground transition-colors hover:border-primary hover:text-primary"
             >
-              Voir tous les projets
+              ${i18n.t('featured.viewAll')}
               <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
               </svg>

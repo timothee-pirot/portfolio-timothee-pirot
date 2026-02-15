@@ -3,6 +3,7 @@ import '../styles/main.css';
 
 // Import du Router et des composants
 import router from './utils/Router.js';
+import i18n from './utils/i18n.js';
 import header from './components/Header.js';
 
 // Import des pages
@@ -13,13 +14,16 @@ import projectDetailPage from './pages/ProjectDetail.js';
 import aboutPage from './pages/About.js';
 
 document.addEventListener('DOMContentLoaded', async () => {
-  
+
+  // Initialiser i18n (charge les traductions)
+  await i18n.init();
+
   // Initialiser le header
   await header.init();
-  
+
   // Conteneur principal pour le contenu
   const appContainer = document.getElementById('app');
-  
+
   // Définir les routes
   router.addRoute('/', async () => {
     await homePage.init();
@@ -27,7 +31,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     homePage.attachEvents();
     window.scrollTo(0, 0);
   });
-  
+
   router.addRoute('/projects', async () => {
     await projectsPage.init();
     appContainer.innerHTML = projectsPage.render();
@@ -41,7 +45,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     projectDetailPage.attachEvents();
     window.scrollTo(0, 0);
   });
-  
+
   router.addRoute('/moi', () => {
     appContainer.innerHTML = aboutPage.render();
     window.scrollTo(0, 0);
@@ -51,7 +55,13 @@ document.addEventListener('DOMContentLoaded', async () => {
     appContainer.innerHTML = contactPage.render();
     window.scrollTo(0, 0);
   });
-  
+
+  // Re-render quand la langue change
+  i18n.onLocaleChange(() => {
+    header.reRender();
+    router.handleRoute();
+  });
+
   // Déclencher la route initiale
   router.handleRoute();
 });

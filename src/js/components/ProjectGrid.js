@@ -1,5 +1,6 @@
 import projectCard from './ProjectCard.js';
 import router from '../utils/Router.js';
+import i18n from '../utils/i18n.js';
 
 class ProjectGrid {
   constructor() {
@@ -15,8 +16,8 @@ class ProjectGrid {
   async init() {
     // Charger les données avec la nouvelle structure
     const [projectsData, skillsData] = await Promise.all([
-      fetch('/portfolio-timothee-pirot/src/data/projects.json').then(r => r.json()),
-      fetch('/portfolio-timothee-pirot/src/data/skills.json').then(r => r.json())
+      fetch(i18n.getDataPath('projects.json')).then(r => r.json()),
+      fetch(i18n.getDataPath('skills.json')).then(r => r.json())
     ]);
 
     // Extraire projects et categories
@@ -33,15 +34,15 @@ class ProjectGrid {
 
   render() {
     const uniqueSkills = Array.from(new Set(this.skills.map(s => s.name))).sort();
-    
+
     return `
       <div class="pt-20 container mx-auto px-6 py-12">
         <div class="mb-12">
           <p class="mb-2 font-mono text-sm tracking-wider text-primary">
-            // projets
+            ${i18n.t('projectGrid.commentTag')}
           </p>
           <h1 class="text-balance text-3xl font-bold text-foreground md:text-4xl">
-            Tous mes projets
+            ${i18n.t('projectGrid.title')}
           </h1>
         </div>
 
@@ -54,7 +55,7 @@ class ProjectGrid {
             <input
               type="text"
               id="project-search"
-              placeholder="Rechercher un projet..."
+              placeholder="${i18n.t('projectGrid.searchPlaceholder')}"
               value="${this.search}"
               class="w-full rounded-lg border border-border bg-secondary py-2 pl-10 pr-4 text-sm text-foreground placeholder:text-muted-foreground focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
             />
@@ -62,15 +63,15 @@ class ProjectGrid {
 
           <div class="flex items-center gap-3">
             <label for="project-sort" class="text-xs text-muted-foreground">
-              Trier par
+              ${i18n.t('projectGrid.sortLabel')}
             </label>
             <select
               id="project-sort"
               class="rounded-lg border border-border bg-secondary px-3 py-2 text-sm text-foreground focus:border-primary focus:outline-none"
             >
-              <option value="recent">Plus récents</option>
-              <option value="name">Nom</option>
-              <option value="duration">Durée</option>
+              <option value="recent">${i18n.t('projectGrid.sortRecent')}</option>
+              <option value="name">${i18n.t('projectGrid.sortName')}</option>
+              <option value="duration">${i18n.t('projectGrid.sortDuration')}</option>
             </select>
           </div>
         </div>
@@ -82,8 +83,8 @@ class ProjectGrid {
               type="button"
               data-category="${cat.value}"
               class="category-filter rounded-md px-3 py-1.5 text-sm transition-colors ${
-                this.activeCategory === cat.value 
-                  ? 'bg-primary text-primary-foreground' 
+                this.activeCategory === cat.value
+                  ? 'bg-primary text-primary-foreground'
                   : 'bg-secondary text-secondary-foreground hover:bg-secondary/80'
               }"
             >
@@ -175,22 +176,27 @@ class ProjectGrid {
     const filtered = this.getFilteredProjects();
     const container = document.getElementById('projects-container');
     const summary = document.getElementById('filter-summary');
-    
+
     const hasActiveFilters = this.activeCategory !== 'all' || this.activeSkill !== '' || this.search !== '';
 
     // Update summary
     if (hasActiveFilters) {
+      const countText = (filtered.length === 1
+        ? i18n.t('projectGrid.projectFound')
+        : i18n.t('projectGrid.projectsFound')
+      ).replace('{count}', filtered.length);
+
       summary.innerHTML = `
         <div class="flex items-center gap-3 text-sm text-muted-foreground">
           <span>
-            ${filtered.length} projet${filtered.length !== 1 ? 's' : ''} trouvé${filtered.length !== 1 ? 's' : ''}
+            ${countText}
           </span>
           <button
             type="button"
             id="clear-filters"
             class="text-primary hover:underline"
           >
-            Effacer les filtres
+            ${i18n.t('projectGrid.clearFilters')}
           </button>
         </div>
       `;
@@ -209,17 +215,17 @@ class ProjectGrid {
       container.innerHTML = `
         <div class="flex flex-col items-center justify-center py-20 text-center">
           <p class="text-lg font-medium text-foreground">
-            Aucun projet trouvé
+            ${i18n.t('projectGrid.noProjectsFound')}
           </p>
           <p class="mt-1 text-sm text-muted-foreground">
-            Essayez de modifier vos filtres
+            ${i18n.t('projectGrid.noProjectsHint')}
           </p>
           <button
             type="button"
             id="clear-filters-empty"
             class="mt-4 text-sm text-primary hover:underline"
           >
-            Réinitialiser les filtres
+            ${i18n.t('projectGrid.resetFilters')}
           </button>
         </div>
       `;
@@ -247,7 +253,7 @@ class ProjectGrid {
     document.querySelectorAll('.category-filter').forEach(btn => {
       btn.addEventListener('click', (e) => {
         this.activeCategory = e.target.dataset.category;
-        
+
         // Update button styles
         document.querySelectorAll('.category-filter').forEach(b => {
           b.classList.remove('bg-primary', 'text-primary-foreground');
@@ -255,7 +261,7 @@ class ProjectGrid {
         });
         e.target.classList.remove('bg-secondary', 'text-secondary-foreground');
         e.target.classList.add('bg-primary', 'text-primary-foreground');
-        
+
         this.updateProjectsDisplay();
       });
     });
@@ -301,7 +307,7 @@ class ProjectGrid {
     // Clear all filters
     const clearFiltersBtn = document.getElementById('clear-filters');
     const clearFiltersEmptyBtn = document.getElementById('clear-filters-empty');
-    
+
     [clearFiltersBtn, clearFiltersEmptyBtn].forEach(btn => {
       if (btn) {
         btn.addEventListener('click', () => {
@@ -309,7 +315,7 @@ class ProjectGrid {
           this.activeSkill = '';
           this.search = '';
           document.getElementById('project-search').value = '';
-          
+
           // Reset category buttons
           document.querySelectorAll('.category-filter').forEach(b => {
             b.classList.remove('bg-primary', 'text-primary-foreground');
@@ -317,7 +323,7 @@ class ProjectGrid {
           });
           document.querySelector('[data-category="all"]').classList.remove('bg-secondary', 'text-secondary-foreground');
           document.querySelector('[data-category="all"]').classList.add('bg-primary', 'text-primary-foreground');
-          
+
           this.updateProjectsDisplay();
           this.renderSkillFilters();
         });
@@ -341,7 +347,7 @@ class ProjectGrid {
         `).join('')}
       </div>
     `;
-    
+
     // Re-attach skill filter events
     document.querySelectorAll('.skill-filter').forEach(btn => {
       btn.addEventListener('click', (e) => {

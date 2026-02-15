@@ -1,4 +1,5 @@
 import profileData from '../../data/profile.json';
+import i18n from '../utils/i18n.js';
 
 class Footer {
   constructor() {
@@ -31,24 +32,24 @@ class Footer {
             <!-- Contact CTA -->
             <div>
               <p class="mb-2 font-mono text-sm tracking-wider text-primary">
-                // contact
+                ${i18n.t('footer.commentTag')}
               </p>
               <h2 class="text-2xl font-bold text-foreground md:text-3xl">
-                Contactez-moi pour échanger
+                ${i18n.t('footer.title')}
               </h2>
               <p class="mt-3 max-w-md leading-relaxed text-muted-foreground">
-                ${this.profile.headline.fr}<br>
-                Disponibilité : ${this.profile.availability.startDate} <br>
-                N'hésitez pas à me contacter pour discuter d'opportunités.
+                ${i18n.td(this.profile.headline)}<br>
+                ${i18n.t('footer.availability')} : ${i18n.td(this.profile.availability.startDate)} <br>
+                ${i18n.t('footer.contactCTA')}
               </p>
-              
+
                 <a href="mailto:t.pirot@free.fr"
                 class="mt-6 inline-flex items-center gap-2 rounded-lg bg-primary px-6 py-3 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90"
               >
                 <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
-                Me contacter
+                ${i18n.t('footer.contactButton')}
               </a>
             </div>
 
@@ -56,11 +57,11 @@ class Footer {
             <div class="flex flex-col justify-between">
               <div>
                 <p class="mb-4 text-sm font-medium text-foreground">
-                  Retrouvez-moi sur
+                  ${i18n.t('footer.findMeOn')}
                 </p>
                 <div class="flex gap-4">
                   ${socialLinks.map(link => `
-                    
+
                       <a href="${link.href}"
                       target="_blank"
                       rel="noopener noreferrer"
@@ -78,10 +79,10 @@ class Footer {
           <!-- Bottom bar -->
           <div class="mt-12 flex flex-col items-center justify-between gap-4 border-t border-border pt-8 text-xs text-muted-foreground sm:flex-row">
             <p>
-              Timothée Pirot © 2026. Tous droits réservés.
+              ${i18n.t('footer.copyright')}
             </p>
             <p class="font-mono">
-              Construit avec TailwindCSS & Vite
+              ${i18n.t('footer.builtWith')}
             </p>
           </div>
         </div>

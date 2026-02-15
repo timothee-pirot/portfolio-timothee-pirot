@@ -1,9 +1,21 @@
 {
   "siteTitle": "TP",
   "mainNav": [
-    { "id": "home", "label": "Accueil", "path": "/" },
-    { "id": "projects", "label": "Projets", "path": "/projects" },
-    { "id": "about", "label": "Moi", "path": "/moi" },
-    { "id": "contact", "label": "Contact", "path": "/contact" }
+    { "id": "home", "label": { "fr": "Accueil", "en": "Home" }, "path": "/" },
+    {
+      "id": "projects",
+      "label": { "fr": "Projets", "en": "Projects" },
+      "path": "/projects"
+    },
+    {
+      "id": "about",
+      "label": { "fr": "CV", "en": "CV" },
+      "path": "/moi"
+    },
+    {
+      "id": "contact",
+      "label": { "fr": "Contact", "en": "Contact" },
+      "path": "/contact"
+    }
   ]
 }

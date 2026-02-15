@@ -1,0 +1,518 @@
+{
+  "projects": [
+    {
+      "slug": "odyssee-du-de-v2",
+      "title": "The Dice Odyssey V2",
+      "category": "dev",
+      "context": "personal",
+      "dates": {
+        "year": 2026,
+        "start": "january",
+        "end": "ongoing"
+      },
+      "status": "in_progress",
+      "duration": "In Progress",
+      "thumbnail": "/portfolio-timothee-pirot/public/assets/images/projets/odyssee-du-de-v2/pres_odyssee_V2.webp",
+      "gallery": [
+        "/portfolio-timothee-pirot/public/assets/images/projets/odyssee-du-de-v2/pres_odyssee_V2.webp"
+      ],
+      "snippet": "Major game engine overhaul: Tiled integration for level design, web export, and complete user experience redesign.",
+      "skills": ["Java", "LibGDX", "Tiled Map Editor", "UI/UX Design"],
+      "description": {
+        "contexte": {
+          "show": true,
+          "content": "Rework of the initial student project to transform it into a more scalable cross-platform application, directly accessible via web browser."
+        },
+        "challenge": {
+          "show": true,
+          "content": "Migrate from a rigid JSON-based map system to a professional level editor (Tiled) and optimize the AI to provide a more strategic challenge."
+        },
+        "solution": {
+          "show": true,
+          "content": "Implementation of a TMX map parser, development of a modern graphical interface, and use of GWT for HTML5/Web export."
+        },
+        "results": {
+          "show": true,
+          "content": "Project currently in development. The level creation pipeline is now 3x faster and the game is testable online."
+        },
+        "competences": {
+          "show": true,
+          "content": "Mastery of video game development workflow, pathfinding algorithm optimization, and web deployment of Java projects."
+        }
+      },
+      "links": [
+        {
+          "type": "github",
+          "url": null,
+          "label": "GitHub (V2)"
+        },
+        {
+          "type": "web",
+          "url": null,
+          "label": "Démo Web"
+        }
+      ]
+    }
+    ,{
+      "slug": "conception-rangement-catia-3d",
+      "title": "Modular Storage System",
+      "category": "cao",
+      "context": ["personal", "association"],
+      "dates": {
+        "year": 2026,
+        "start": "january",
+        "end": "ongoing"
+      },
+      "status": "in_progress",
+      "duration": "In Progress",
+      "thumbnail": "/portfolio-timothee-pirot/public/assets/images/projets/img-blanc.png",
+      "gallery": [
+        "/portfolio-timothee-pirot/public/assets/images/projets/img-blanc.png"
+      ],
+      "snippet": "Advanced CAD modeling on CATIA of an optimized storage system for robotic components and Lego, designed for 3D printing.",
+      "skills": ["CATIA", "Impression 3D"],
+      "description": {
+        "contexte": {
+          "show": true,
+          "content": "Self-taught training project on CATIA aimed at creating a custom storage system, compatible with existing drawer racks, for organizing Lego parts and electronic components."
+        },
+        "challenge": {
+          "show": true,
+          "content": "Master complex CATIA functions (Part Design, Assembly) to achieve precise tolerances essential for interlocking and 3D printing."
+        },
+        "solution": {
+          "show": true,
+          "content": "Parametric design of dividers and storage modules, export to STL format, and optimization of print settings to ensure structural strength."
+        },
+        "results": {
+          "show": true,
+          "content": "Several modules already produced and operational. The project continues with the creation of new variants to meet specific storage needs."
+        },
+        "competences": {
+          "show": true,
+          "content": "Mastery of advanced CAD software, additive manufacturing workflow management (from 3D model to physical object), and utility-oriented design."
+        }
+      },
+      "links": [
+        null
+      ]
+    }
+    ,{
+      "slug": "evolutek-robot",
+      "title": "EVOLUTEK - Robotics Competition",
+      "category": "robotique",
+      "context": "association",
+      "dates": {
+        "year": 2026,
+        "start": "january",
+        "end": "december"
+      },
+      "status": "in_progress",
+      "duration": "In Progress",
+      "thumbnail": "/portfolio-timothee-pirot/public/assets/images/projets/evo-robot/pres-evolutek.webp",
+      "gallery": [
+        "/portfolio-timothee-pirot/public/assets/images/projets/evo-robot/pres-evolutek.webp"
+      ],
+      "snippet": "3D modeling of actuators for a competitive robotics team, including mechanical design and 3D printing.",
+      "skills": ["CATIA", "Mécanique", "Impression 3D", "Travail en équipe"],
+      "description": {
+        "contexte": {
+          "show": true,
+          "content": "EVOLUTEK - Robotics Association of EPITA, EPITECH and IPSA schools - Robotics Competition"
+        },
+        "challenge": {
+          "show": true,
+          "content": "Design and build mechanical actuators capable of interacting with game elements (Jenga blocks this year), while complying with competition rules and fitting seamlessly into the robot's architecture."
+        },
+        "solution": {
+          "show": true,
+          "content": "The final concept has not yet been finalized, but many ideas have been put forward. The next step is to make the technical decisions and move into the concrete implementation phase."
+        },
+        "results": {
+          "show": false,
+          "content": " "
+        },
+        "competences": {
+          "show": true,
+          "content": "3D modeling with CATIA: ability to mentally visualize mechanical concepts and accurately reproduce them in CAD software."
+        }
+      },
+      "links": [
+        null
+      ]
+    },
+    {
+      "slug": "odyssee-du-de-java",
+      "title": "The Dice Odyssey",
+      "category": "dev",
+      "context": "school",
+      "dates": {
+        "year": 2025,
+        "start": "november",
+        "end": "december"
+      },
+      "status": "completed",
+      "duration": "3 semaines",
+      "thumbnail": "/portfolio-timothee-pirot/public/assets/images/projets/odysee-du-de-java/pres_odyssee.webp",
+      "gallery": [
+        "/portfolio-timothee-pirot/public/assets/images/projets/odysee-du-de-java/pres_odyssee.webp"
+      ],
+      "snippet": "Modern reinvention of Ludo in Java/LibGDX, featuring a mystery event system, tactical AI, and a documented modular architecture.",
+      "skills": ["Java", "LibGDX", "JUnit", "POO", "Gradle", "UML", "Travail en équipe"],
+      "description": {
+        "contexte": {
+          "show": true,
+          "content": "Development of a digital board game in a team of 3 as part of an EPITECH project. The goal was to modernize classic Ludo by integrating mystery events and new themes."
+        },
+        "challenge": {
+          "show": true,
+          "content": "Manage a complex pawn state system (base, in-play, blocked, barricade, immune) and implement a random event engine (MysteryCell) dynamically influencing the course of the game."
+        },
+        "solution": {
+          "show": true,
+          "content": "Decoupled architecture with a synchronous Engine, strict validation via a Rules class, and a LibGDX interface handling animations and visual feedback (blinking, dynamic messages). Full documentation via JavaDoc and UML diagrams."
+        },
+        "results": {
+          "show": true,
+          "content": "A complete game including AI, barricade and capture management, a logging system (GameLogger), and a structured Game Design Document (GDD). The project supports multiple bonus/penalty types (teleportation, boost, barricade explosion)."
+        },
+        "competences": {
+          "show": true,
+          "content": "Mastery of advanced OOP, LibGDX lifecycle management, decision-making AI algorithm design, and build automation with Gradle."
+        }
+      },
+      "links": [
+        null
+      ]
+    },
+    {
+      "slug": "3dof-robotic-arm-simulation",
+      "title": "3DOF Robotic Arm Simulation",
+      "category": "robotique",
+      "context": "personal",
+      "dates": {
+        "year": 2025,
+        "start": "juillet",
+        "end": null
+      },
+      "status": "completed",
+      "duration": "3 semaines",
+      "thumbnail": "/portfolio-timothee-pirot/public/assets/images/projets/3dof-ros2/pres_ros2.webp",
+      "gallery": [
+        "/portfolio-timothee-pirot/public/assets/images/projets/3dof-ros2/pres_ros2.webp"
+      ],
+      "snippet": "Full simulation of a 3-degree-of-freedom articulated arm in ROS 2, including URDF modeling and actuator control.",
+      "skills": ["ROS2", "Gazebo", "Rviz", "URDF/XACRO", "ros2_control", "Linux"],
+      "description": {
+        "contexte": {
+          "show": true,
+          "content": "Exploratory project in robotic simulation. Building a 3-degree-of-freedom (3DOF) robotic arm simulation to explore the tool's capabilities, carried out on Linux due to compatibility constraints."
+        },
+        "challenge": {
+          "show": true,
+          "content": "Learn ROS 2 and the URDF format with no prior experience, while adapting to a new Linux development environment. Model the robot's kinematic structure and integrate the simulated hardware control layer via ros2_control."
+        },
+        "solution": {
+          "show": true,
+          "content": "Set up a dual-boot Linux system on a Windows machine, then installed and configured all project dependencies (ROS 2, simulators, control libraries)."
+        },
+        "results": {
+          "show": true,
+          "content": "Mixed results: installed Ubuntu 24.04 while ROS 2 only supports version 22.04, causing compatibility issues. Started the project too quickly without sufficiently analyzing the development environment, which is just as important as the tool itself. Arm modeling was successful, but automated movements were non-functional due to system incompatibilities."
+        },
+        "competences": {
+          "show": true,
+          "content": ["Adapting to a new development environment: discovering Linux, changing work methods, self-directed learning of unfamiliar tools.",
+          "Research and learning ability: self-taught exploration of new technologies (ROS 2, URDF)."]
+        }
+      },
+      "links": [
+        null
+      ]
+    },
+    {
+      "slug": "bras-robotique-lego-v2-1",
+      "title": "Lego Technic Robotic Arm v2.1",
+      "category": "robotique",
+      "context": "personal",
+      "dates": {
+        "year": 2025,
+        "start": "Février",
+        "end": "Juillet"
+      },
+      "status": "completed",
+      "duration": "6 mois (itération v2.1)",
+      "thumbnail": "/portfolio-timothee-pirot/public/assets/images/projets/bras-robotique-lego-v2/pres_lego.webp",
+      "gallery": [
+        "/portfolio-timothee-pirot/public/assets/images/projets/bras-robotique-lego-v2/pres_lego.webp",
+        "/portfolio-timothee-pirot/public/assets/images/projets/bras-robotique-lego-v2/lego_V2.webp",
+        "/portfolio-timothee-pirot/public/assets/images/projets/bras-robotique-lego-v2/lego_V2_pince.webp"
+      ],
+      "snippet": "Major evolution of an autonomous robotic arm: mechanical structure optimization and advanced control via Python and smart Hub.",
+      "skills": [
+        "Python",
+        "Pybricks",
+        "Conception Mécanique",
+        "Mécatronique",
+        "Lego Mindstorms"
+      ],
+      "description": {
+        "contexte": {
+          "show": true,
+          "content": "Complete overhaul of the LEGO robotic arm project with a new structural approach. Integration of new sensors, scale change, and a total break from the first generation to meet more ambitious goals."
+        },
+        "challenge": {
+          "show": true,
+          "content": "Completely rethink the structural design to create a more compact, maneuverable, and fluid arm, with fewer parts and better component integration. Transition from block-based programming to pure Python programming."
+        },
+        "solution": {
+          "show": true,
+          "content": "Complete kinematics overhaul with multiple structural design iterations. Use of the Mindstorms Education Hub for synchronized motor management, integration of new gear systems, and implementation of autonomous control logic based on Python scripts."
+        },
+        "results": {
+          "show": true,
+          "content": "Significant improvement in positioning accuracy. The arm is capable of performing repetitive task cycles in a semi-autonomous manner."
+        },
+        "competences": {
+          "show": true,
+          "content": ["Development of Python programming skills for robotics.", "Improvement of structural design and mechanical optimization skills."]
+        }
+      },
+      "links": [
+        null
+      ]
+    },
+    {
+      "slug": "city-idle-godot",
+      "title": "City Idle Game (Godot)",
+      "category": "dev",
+      "context": "school",
+      "dates": {
+        "year": 2025,
+        "start": "Janvier",
+        "end": "Mai"
+      },
+      "status": "completed",
+      "duration": "5 mois",
+      "thumbnail": "/portfolio-timothee-pirot/public/assets/images/projets/city-idle-godot/pres_godot.webp",
+      "gallery": [
+        "/portfolio-timothee-pirot/public/assets/images/projets/city-idle-godot/pres_godot.webp"
+      ],
+      "snippet": "Management and building idle game developed with Godot, tracing the evolution of a city from prehistory to the modern era.",
+      "skills": ["Godot Engine", "Game Design", "Python", "Travail en équipe"],
+      "description": {
+        "contexte": {
+          "show": true,
+          "content": "Development of an 'Idle City Builder' game where the player must advance their civilization through the ages by managing resources and technologies."
+        },
+        "challenge": {
+          "show": true,
+          "content": "Implement an interdependent skill tree, an XP-based progression system, and persistent data management (save/load)."
+        },
+        "solution": {
+          "show": true,
+          "content": "Use of the Godot engine and GDScript language to create a dynamic user interface, an evolving time system, and a balanced game economy."
+        },
+        "results": {
+          "show": true,
+          "content": "A functional game with complete mechanics: automatic harvesting, building unlocks via the research tree, and world state saving."
+        },
+        "competences": {
+          "show": true,
+          "content": "Complex game system architecture, event-driven programming, and ergonomic UI design for management games."
+        }
+      },
+      "links": [
+        null
+      ]
+    },
+    {
+      "slug": "maison-intelligente-arduino-tinkercad",
+      "title": "Home Automation: Smart House",
+      "category": ["robotique", "dev"],
+      "context": "school",
+      "dates": {
+        "year": 2025,
+        "start": null,
+        "end": null
+      },
+      "status": "completed",
+      "duration": "2 semaines",
+      "thumbnail": "/portfolio-timothee-pirot/public/assets/images/projets/maison-domotique/pres_tinkercad.webp",
+      "gallery": [
+        "/portfolio-timothee-pirot/public/assets/images/projets/maison-domotique/projet-domotique.webp"
+      ],
+      "snippet": "Simulation of a complete home automation system in Tinkercad, including automated heating, shutter, and ventilation (HVAC) management.",
+      "skills": ["C++", "Arduino", "Tinkercad", "Électronique", "Domotique", "Travail en équipe"],
+      "description": {
+        "contexte": {
+          "show": true,
+          "content": "Design of a connected house prototype aimed at optimizing comfort and energy consumption through automated systems."
+        },
+        "challenge": {
+          "show": true,
+          "content": "Integrate multiple independent control loops (temperature, brightness, air quality) on a single Arduino microcontroller."
+        },
+        "solution": {
+          "show": true,
+          "content": "C++ development to control servomotors (shutters), temperature sensors (heating), and DC motors (ventilation). Full software and hardware simulation on Tinkercad."
+        },
+        "results": {
+          "show": true,
+          "content": "Functional system capable of regulating room temperature and adjusting shutter opening based on simulated environmental conditions."
+        },
+        "competences": {
+          "show": true,
+          "content": "Microcontroller programming, electronic schematic reading, and closed-loop control logic."
+        }
+      },
+      "links": [
+        null
+      ]
+    },
+    {
+      "slug": "supemon-c-console",
+      "title": "Supemon Game - Console",
+      "category": "dev",
+      "context": "school",
+      "dates": {
+        "year": 2025,
+        "start": null,
+        "end": null
+      },
+      "status": "completed",
+      "duration": "1 mois",
+      "thumbnail": "/portfolio-timothee-pirot/public/assets/images/projets/supemon-console/pres_supemon.webp",
+      "gallery": [
+        "/portfolio-timothee-pirot/public/assets/images/projets/supemon-console/pres_supemon.webp"
+      ],
+      "snippet": "Console-based RPG in C, featuring a turn-based combat system and save management.",
+      "skills": ["C", "Algorithmique", "POO", "Travail en équipe"],
+      "description": {
+        "contexte": {
+          "show": true,
+          "content": "Development of an adventure game inspired by the Pokémon universe, entirely built in C with a command-line interface."
+        },
+        "challenge": {
+          "show": true,
+          "content": "Implement a balanced combat logic and manage data persistence to allow players to resume their progress."
+        },
+        "solution": {
+          "show": true,
+          "content": "Use of complex data structures for entities (Supemons) and file manipulation for the save/load system."
+        },
+        "results": {
+          "show": true,
+          "content": "A functional game allowing players to battle wild creatures and retain their statistics across sessions."
+        },
+        "competences": {
+          "show": true,
+          "content": "Mastery of memory management, pointers, and file I/O in C."
+        }
+      },
+      "links": [
+        null
+      ]
+    },
+    {
+      "slug": "lego-technic-robotic-arm",
+      "title": "Lego Technic Robotic Arm",
+      "category": "robotique",
+      "context": "personal",
+      "dates": {
+        "year": 2023,
+        "start": "2023",
+        "end": "2025"
+      },
+      "status": "completed",
+      "duration": "2 an",
+      "thumbnail": "/portfolio-timothee-pirot/public/assets/images/projets/lego-technic-robotic-arm/pres_lego.webp",
+      "gallery": [
+        "/portfolio-timothee-pirot/public/assets/images/projets/lego-technic-robotic-arm/Picture 1.webp",
+        "/portfolio-timothee-pirot/public/assets/images/projets/lego-technic-robotic-arm/Picture 4.webp"
+      ],
+      "snippet": "Design of a motorized articulated arm using the Lego Technic ecosystem.",
+      "skills": [
+        "Lego Hub",
+        "Robotique"
+      ],
+      "description": {
+        "contexte": {
+          "show": true,
+          "content": "Building a motorized robotic arm leveraging the versatility of Lego Technic parts."
+        },
+        "challenge": {
+          "show": true,
+          "content": "First project without a pre-established plan or existing reference: design entirely based on experimentation and imagination, with a trial-and-error approach."
+        },
+        "solution": {
+          "show": false,
+          "content": ""
+        },
+        "results": {
+          "show": true,
+          "content": "Massive structure with many limitations: jerky movements, structural design issues, significant size and weight, excessive part usage. The project served as a learning foundation for subsequent versions."
+        },
+        "competences": {
+          "show": true,
+          "content": ["Introduction to mechanical design: first steps in structural and kinematic thinking.",
+        "Learning through experimentation: ability to test, analyze failures, and iterate."]
+        }
+      },
+      "links": [
+        null
+      ]
+    },
+    {
+      "slug": "jeu-yinsh-python-tkinter",
+      "title": "Yinsh Board Game",
+      "category": "dev",
+      "context": "school",
+      "dates": {
+        "year": 2024,
+        "start": "Janvier",
+        "end": "Mai"
+      },
+      "status": "completed",
+      "duration": "5 mois",
+      "thumbnail": "/portfolio-timothee-pirot/public/assets/images/projets/img-blanc.png",
+      "gallery": [
+        "/portfolio-timothee-pirot/public/assets/images/projets/img-blanc.png"
+      ],
+      "snippet": "Digital adaptation of the abstract board game Yinsh, including marker flipping mechanics and ring movement management.",
+      "skills": ["Python", "Tkinter", "Algorithmique", "Travail en équipe"],
+      "description": {
+        "contexte": {
+          "show": true,
+          "content": "Development of a digital version of Yinsh, an abstract strategy game from the GIPF project, using Python and the Tkinter interface."
+        },
+        "challenge": {
+          "show": true,
+          "content": "Implement the complex ring movement rules and marker flipping mechanics (Othello/Reversi-like system on a specific board)."
+        },
+        "solution": {
+          "show": true,
+          "content": "Design of a game engine managing hexagonal board coordinates and victory conditions based on marker alignment."
+        },
+        "results": {
+          "show": true,
+          "content": "An interactive application allowing two players to compete while fully respecting the official game rules."
+        },
+        "competences": {
+          "show": true,
+          "content": "Data structure modeling for non-standard game boards and graphical interaction management with Tkinter."
+        }
+      },
+      "links": [
+        null
+      ]
+    }
+  ],
+  "categories": [
+    { "value": "all", "label": "Tous" },
+    { "value": "robotique", "label": "Robotique", "color": "#3B82F6" },
+    { "value": "dev", "label": "Développement", "color": "#F59E0B" },
+    { "value": "devops", "label": "DevOps", "color": "#8B5CF6" },
+    { "value": "cao", "label": "Modélisation 3D", "color": "#EC4899" }
+  ]
+}
