@@ -1,0 +1,96 @@
+{
+  "hero": {
+    "commentTag": "// Portfolio",
+    "availability": "Availability",
+    "discoverProjects": "Discover my projects",
+    "seeSkills": "See my skills",
+    "scrollAriaLabel": "Scroll to projects"
+  },
+  "skills": {
+    "commentTag": "// Skills",
+    "title": "Technical Skills",
+    "subtitle": "Each skill is backed by real projects. Click to explore them.",
+    "dataComingSoon": "Data coming soon",
+    "legendSchool": " School",
+    "legendPersonal": "Personal",
+    "legendAssociation": "Association",
+    "legendWork": "Professional",
+    "typeLanguage": "Language",
+    "typeTool": "Tool",
+    "typeFramework": "Framework",
+    "typeSoftware": "Software",
+    "typeSoftSkill": "Soft Skill"
+  },
+  "featured": {
+    "commentTag": "// Projects",
+    "title": " Featured Projects",
+    "viewAll": " View all projects"
+  },
+  "projectCard": {
+    "statusInProgress": "In progress",
+    "statusCompleted": "Completed",
+    "contextSchool": "School",
+    "contextPersonal": "Personal",
+    "contextAssociation": "Association",
+    "contextWork": "Professional"
+  },
+  "projectGrid": {
+    "commentTag": "// Projects",
+    "title": "All my projects",
+    "searchPlaceholder": "Search a project...",
+    "sortLabel": "Sort by",
+    "sortRecent": "Most recent",
+    "sortName": "Name",
+    "sortDuration": "Duration",
+    "projectFound": "{count} project found",
+    "projectsFound": "{count} projects found",
+    "clearFilters": "Clear filters",
+    "noProjectsFound": "No projects found",
+    "noProjectsHint": "Try modifying your filters",
+    "resetFilters": "Reset filters"
+  },
+  "projectDetail": {
+    "notFoundTitle": "Project not found",
+    "notFoundText": "The project you are looking for does not exist.",
+    "backToProjects": "Back to projects",
+    "sectionContexte": "Context",
+    "sectionChallenge": "Challenge",
+    "sectionSolution": "Solution",
+    "sectionResults": "Results",
+    "sectionCompetences": "Skills",
+    "gallery": "Gallery",
+    "infoTitle": "Information",
+    "infoStatus": "Status",
+    "infoContext": "Context",
+    "infoYear": "Year",
+    "infoDuration": "Duration",
+    "skillsTitle": "Skills",
+    "linksTitle": "Links",
+    "viewAllProjects": "View all projects"
+  },
+  "footer": {
+    "commentTag": "// Contact",
+    "title": "Get in touch",
+    "availability": "Availability",
+    "contactCTA": "Feel free to reach out to discuss opportunities.",
+    "contactButton": "Contact me",
+    "findMeOn": "Find me on",
+    "copyright": "Timothée Pirot © 2026.   All rights reserved.",
+    "builtWith": "Built with TailwindCSS & Vite"
+  },
+  "about": {
+    "commentTag": "// About",
+    "availability": "Availability",
+    "documentsTitle": "Documents",
+    "docRoboticsTitle": "CV & Cover Letter Robotics",
+    "docRoboticsDesc": "Resume and Cover Letter - Robotics, Embedded Systems & IoT",
+    "docDevTitle": "CV & Cover Letter Development",
+    "docDevDesc": "Resume and Cover Letter - Development",
+    "download": "Download"
+  },
+  "contact": {
+    "commentTag": "// Contact",
+    "title": "Contact me",
+    "subtitle": "A question, an opportunity? Feel free to reach out."
+  }
+}

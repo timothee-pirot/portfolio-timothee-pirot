@@ -1,0 +1,96 @@
+{
+  "hero": {
+    "commentTag": "// Portfolio",
+    "availability": "Disponibilité",
+    "discoverProjects": "Découvrir mes projets",
+    "seeSkills": "Voir mes compétences",
+    "scrollAriaLabel": "Scroll vers les projets"
+  },
+  "skills": {
+    "commentTag": "// Compétences",
+    "title": "Compétences techniques",
+    "subtitle": "Chaque compétence est illustrée par des projets concrets. Cliquez pour découvrir les projets associés.",
+    "dataComingSoon": "Données à venir",
+    "legendSchool": "École",
+    "legendPersonal": "Personnel",
+    "legendAssociation": "Association",
+    "legendWork": "Expérience Professionnelle",
+    "typeLanguage": "Langage",
+    "typeTool": "Outil",
+    "typeFramework": "Framework",
+    "typeSoftware": "Logiciel",
+    "typeSoftSkill": "Soft Skill"
+  },
+  "featured": {
+    "commentTag": "// Projets",
+    "title": "Projets mis en avant",
+    "viewAll": "Voir tous les projets"
+  },
+  "projectCard": {
+    "statusInProgress": "En cours",
+    "statusCompleted": "Terminé",
+    "contextSchool": "École",
+    "contextPersonal": "Personnel",
+    "contextAssociation": "Association",
+    "contextWork": "Professionnel"
+  },
+  "projectGrid": {
+    "commentTag": "// Projets",
+    "title": "Tous mes projets",
+    "searchPlaceholder": "Rechercher un projet...",
+    "sortLabel": "Trier par",
+    "sortRecent": "Plus récents",
+    "sortName": "Nom",
+    "sortDuration": "Durée",
+    "projectFound": "{count} projet trouvé",
+    "projectsFound": "{count} projets trouvés",
+    "clearFilters": "Effacer les filtres",
+    "noProjectsFound": "Aucun projet trouvé",
+    "noProjectsHint": "Essayez de modifier vos filtres",
+    "resetFilters": "Réinitialiser les filtres"
+  },
+  "projectDetail": {
+    "notFoundTitle": "Projet non trouvé",
+    "notFoundText": "Le projet que vous recherchez n'existe pas.",
+    "backToProjects": "Retour aux projets",
+    "sectionContexte": "Contexte",
+    "sectionChallenge": "Challenge",
+    "sectionSolution": "Solution",
+    "sectionResults": "Résultats",
+    "sectionCompetences": "Compétences",
+    "gallery": "Galerie",
+    "infoTitle": "Informations",
+    "infoStatus": "Statut",
+    "infoContext": "Contexte",
+    "infoYear": "Année",
+    "infoDuration": "Durée",
+    "skillsTitle": "Compétences",
+    "linksTitle": "Liens",
+    "viewAllProjects": "Voir tous les projets"
+  },
+  "footer": {
+    "commentTag": "// Contact",
+    "title": "Contactez-moi pour échanger",
+    "availability": "Disponibilité",
+    "contactCTA": "N'hésitez pas à me contacter pour discuter d'opportunités.",
+    "contactButton": "Me contacter",
+    "findMeOn": "Retrouvez-moi sur",
+    "copyright": "Timothée Pirot © 2026. Tous droits réservés.",
+    "builtWith": "Construit avec TailwindCSS & Vite"
+  },
+  "about": {
+    "commentTag": "// Moi",
+    "availability": "Disponibilité",
+    "documentsTitle": "Documents",
+    "docRoboticsTitle": "CV & LM Robotique",
+    "docRoboticsDesc": "Curriculum Vitae et Lettre de Motivation - Robotique, Systèmes Embarqués & IoT",
+    "docDevTitle": "CV & LM Développement",
+    "docDevDesc": "Curriculum Vitae et Lettre de Motivation - Développement",
+    "download": "Télécharger"
+  },
+  "contact": {
+    "commentTag": "// Contact",
+    "title": "Me contacter",
+    "subtitle": "Une question, une opportunité ? N'hésitez pas à me contacter."
+  }
+}
