@@ -2,7 +2,7 @@
 
 > Multilingual web portfolio showcasing my projects in software development, robotics, and embedded systems.
 
-[![Live Demo](https://img.shields.io/badge/demo-live-success)](https://timothee-pirot.github.io/portfolio/)
+[![Live Demo](https://img.shields.io/badge/demo-live-success)](https://timothee-pirot.github.io/portfolio-timothee-pirot/#/)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 ## 🌐 Available Languages
@@ -174,7 +174,7 @@ This portfolio serves as a technical showcase to:
 
 **Timothée Pirot** - Engineering Student (Bac+3) @ EPITECH Paris
 
-- 🔗 [Live Portfolio](https://timothee-pirot.github.io/portfolio/)
+- 🔗 [Live Portfolio](https://timothee-pirot.github.io/portfolio-timothee-pirot/#/)
 - 💼 [LinkedIn](https://linkedin.com/in/timothee-pirot)
 - 📧 [Email](mailto:timothee.pirot@epitech.eu)
 - 🐙 [GitHub](https://github.com/timothee-pirot)
