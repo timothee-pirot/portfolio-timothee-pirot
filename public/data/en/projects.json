@@ -12,9 +12,9 @@
       },
       "status": "in_progress",
       "duration": "In Progress",
-      "thumbnail": "/portfolio-timothee-pirot/public/assets/images/projets/odyssee-du-de-v2/pres_odyssee_V2.webp",
+      "thumbnail": "/portfolio-timothee-pirot/assets/images/projets/odyssee-du-de-v2/pres_odyssee_V2.webp",
       "gallery": [
-        "/portfolio-timothee-pirot/public/assets/images/projets/odyssee-du-de-v2/pres_odyssee_V2.webp"
+        "/portfolio-timothee-pirot/assets/images/projets/odyssee-du-de-v2/pres_odyssee_V2.webp"
       ],
       "snippet": "Major game engine overhaul: Tiled integration for level design, web export, and complete user experience redesign.",
       "skills": ["Java", "LibGDX", "Tiled Map Editor", "UI/UX Design"],
@@ -65,9 +65,9 @@
       },
       "status": "in_progress",
       "duration": "In Progress",
-      "thumbnail": "/portfolio-timothee-pirot/public/assets/images/projets/img-blanc.png",
+      "thumbnail": "/portfolio-timothee-pirot/assets/images/projets/img-blanc.png",
       "gallery": [
-        "/portfolio-timothee-pirot/public/assets/images/projets/img-blanc.png"
+        "/portfolio-timothee-pirot/assets/images/projets/img-blanc.png"
       ],
       "snippet": "Advanced CAD modeling on CATIA of an optimized storage system for robotic components and Lego, designed for 3D printing.",
       "skills": ["CATIA", "Impression 3D"],
@@ -109,9 +109,9 @@
       },
       "status": "in_progress",
       "duration": "In Progress",
-      "thumbnail": "/portfolio-timothee-pirot/public/assets/images/projets/evo-robot/pres-evolutek.webp",
+      "thumbnail": "/portfolio-timothee-pirot/assets/images/projets/evo-robot/pres-evolutek.webp",
       "gallery": [
-        "/portfolio-timothee-pirot/public/assets/images/projets/evo-robot/pres-evolutek.webp"
+        "/portfolio-timothee-pirot/assets/images/projets/evo-robot/pres-evolutek.webp"
       ],
       "snippet": "3D modeling of actuators for a competitive robotics team, including mechanical design and 3D printing.",
       "skills": ["CATIA", "Mécanique", "Impression 3D", "Travail en équipe"],
@@ -153,9 +153,9 @@
       },
       "status": "completed",
       "duration": "3 semaines",
-      "thumbnail": "/portfolio-timothee-pirot/public/assets/images/projets/odysee-du-de-java/pres_odyssee.webp",
+      "thumbnail": "/portfolio-timothee-pirot/assets/images/projets/odysee-du-de-java/pres_odyssee.webp",
       "gallery": [
-        "/portfolio-timothee-pirot/public/assets/images/projets/odysee-du-de-java/pres_odyssee.webp"
+        "/portfolio-timothee-pirot/assets/images/projets/odysee-du-de-java/pres_odyssee.webp"
       ],
       "snippet": "Modern reinvention of Ludo in Java/LibGDX, featuring a mystery event system, tactical AI, and a documented modular architecture.",
       "skills": ["Java", "LibGDX", "JUnit", "POO", "Gradle", "UML", "Travail en équipe"],
@@ -197,9 +197,9 @@
       },
       "status": "completed",
       "duration": "3 semaines",
-      "thumbnail": "/portfolio-timothee-pirot/public/assets/images/projets/3dof-ros2/pres_ros2.webp",
+      "thumbnail": "/portfolio-timothee-pirot/assets/images/projets/3dof-ros2/pres_ros2.webp",
       "gallery": [
-        "/portfolio-timothee-pirot/public/assets/images/projets/3dof-ros2/pres_ros2.webp"
+        "/portfolio-timothee-pirot/assets/images/projets/3dof-ros2/pres_ros2.webp"
       ],
       "snippet": "Full simulation of a 3-degree-of-freedom articulated arm in ROS 2, including URDF modeling and actuator control.",
       "skills": ["ROS2", "Gazebo", "Rviz", "URDF/XACRO", "ros2_control", "Linux"],
@@ -242,11 +242,11 @@
       },
       "status": "completed",
       "duration": "6 mois (itération v2.1)",
-      "thumbnail": "/portfolio-timothee-pirot/public/assets/images/projets/bras-robotique-lego-v2/pres_lego.webp",
+      "thumbnail": "/portfolio-timothee-pirot/assets/images/projets/bras-robotique-lego-v2/pres_lego.webp",
       "gallery": [
-        "/portfolio-timothee-pirot/public/assets/images/projets/bras-robotique-lego-v2/pres_lego.webp",
-        "/portfolio-timothee-pirot/public/assets/images/projets/bras-robotique-lego-v2/lego_V2.webp",
-        "/portfolio-timothee-pirot/public/assets/images/projets/bras-robotique-lego-v2/lego_V2_pince.webp"
+        "/portfolio-timothee-pirot/assets/images/projets/bras-robotique-lego-v2/pres_lego.webp",
+        "/portfolio-timothee-pirot/assets/images/projets/bras-robotique-lego-v2/lego_V2.webp",
+        "/portfolio-timothee-pirot/assets/images/projets/bras-robotique-lego-v2/lego_V2_pince.webp"
       ],
       "snippet": "Major evolution of an autonomous robotic arm: mechanical structure optimization and advanced control via Python and smart Hub.",
       "skills": [
@@ -294,9 +294,9 @@
       },
       "status": "completed",
       "duration": "5 mois",
-      "thumbnail": "/portfolio-timothee-pirot/public/assets/images/projets/city-idle-godot/pres_godot.webp",
+      "thumbnail": "/portfolio-timothee-pirot/assets/images/projets/city-idle-godot/pres_godot.webp",
       "gallery": [
-        "/portfolio-timothee-pirot/public/assets/images/projets/city-idle-godot/pres_godot.webp"
+        "/portfolio-timothee-pirot/assets/images/projets/city-idle-godot/pres_godot.webp"
       ],
       "snippet": "Management and building idle game developed with Godot, tracing the evolution of a city from prehistory to the modern era.",
       "skills": ["Godot Engine", "Game Design", "Python", "Travail en équipe"],
@@ -338,9 +338,9 @@
       },
       "status": "completed",
       "duration": "2 semaines",
-      "thumbnail": "/portfolio-timothee-pirot/public/assets/images/projets/maison-domotique/pres_tinkercad.webp",
+      "thumbnail": "/portfolio-timothee-pirot/assets/images/projets/maison-domotique/pres_tinkercad.webp",
       "gallery": [
-        "/portfolio-timothee-pirot/public/assets/images/projets/maison-domotique/projet-domotique.webp"
+        "/portfolio-timothee-pirot/assets/images/projets/maison-domotique/projet-domotique.webp"
       ],
       "snippet": "Simulation of a complete home automation system in Tinkercad, including automated heating, shutter, and ventilation (HVAC) management.",
       "skills": ["C++", "Arduino", "Tinkercad", "Électronique", "Domotique", "Travail en équipe"],
@@ -382,9 +382,9 @@
       },
       "status": "completed",
       "duration": "1 mois",
-      "thumbnail": "/portfolio-timothee-pirot/public/assets/images/projets/supemon-console/pres_supemon.webp",
+      "thumbnail": "/portfolio-timothee-pirot/assets/images/projets/supemon-console/pres_supemon.webp",
       "gallery": [
-        "/portfolio-timothee-pirot/public/assets/images/projets/supemon-console/pres_supemon.webp"
+        "/portfolio-timothee-pirot/assets/images/projets/supemon-console/pres_supemon.webp"
       ],
       "snippet": "Console-based RPG in C, featuring a turn-based combat system and save management.",
       "skills": ["C", "Algorithmique", "POO", "Travail en équipe"],
@@ -426,10 +426,10 @@
       },
       "status": "completed",
       "duration": "2 an",
-      "thumbnail": "/portfolio-timothee-pirot/public/assets/images/projets/lego-technic-robotic-arm/pres_lego.webp",
+      "thumbnail": "/portfolio-timothee-pirot/assets/images/projets/lego-technic-robotic-arm/pres_lego.webp",
       "gallery": [
-        "/portfolio-timothee-pirot/public/assets/images/projets/lego-technic-robotic-arm/Picture 1.webp",
-        "/portfolio-timothee-pirot/public/assets/images/projets/lego-technic-robotic-arm/Picture 4.webp"
+        "/portfolio-timothee-pirot/assets/images/projets/lego-technic-robotic-arm/Picture 1.webp",
+        "/portfolio-timothee-pirot/assets/images/projets/lego-technic-robotic-arm/Picture 4.webp"
       ],
       "snippet": "Design of a motorized articulated arm using the Lego Technic ecosystem.",
       "skills": [
@@ -475,9 +475,9 @@
       },
       "status": "completed",
       "duration": "5 mois",
-      "thumbnail": "/portfolio-timothee-pirot/public/assets/images/projets/img-blanc.png",
+      "thumbnail": "/portfolio-timothee-pirot/assets/images/projets/img-blanc.png",
       "gallery": [
-        "/portfolio-timothee-pirot/public/assets/images/projets/img-blanc.png"
+        "/portfolio-timothee-pirot/assets/images/projets/img-blanc.png"
       ],
       "snippet": "Digital adaptation of the abstract board game Yinsh, including marker flipping mechanics and ring movement management.",
       "skills": ["Python", "Tkinter", "Algorithmique", "Travail en équipe"],
