@@ -1,135 +1,184 @@
 # Portfolio - Timothée Pirot
 
-Portfolio web présentant mes projets en dev, robotique, et autre
+> Multilingual web portfolio showcasing my projects in software development, robotics, and embedded systems.
 
-## 🚀 Aperçu
+[![Live Demo](https://img.shields.io/badge/demo-live-success)](https://timothee-pirot.github.io/portfolio/)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
-Site web moderne mettant en avant mes compétences techniques à travers des projets concrets en robotique, programmation embarquée et automatisation industrielle.
+## 🌐 Available Languages
 
+- 🇬🇧 English (default)
+- 🇫🇷 Français
+- 🇩🇪 Deutsch *(coming soon)*
 
-## 🛠️ Technologies utilisées
+## ✨ Features
 
-### Frontend
-- **HTML5** - Structure sémantique
-- **TailwindCSS 3.4** - Framework CSS utility-first pour un design moderne et responsive
-- **JavaScript (ES6+)** - Logique interactive et génération dynamique de contenu
-- **Vite 5.4** - Build tool ultra-rapide avec Hot Module Replacement
+- **🌍 Multilingual** - i18n system with localStorage persistence and slug-based navigation
+- **📱 Responsive** - Mobile-first design optimized with TailwindCSS
+- **🔗 Smart Navigation** - Bidirectional links between skills ↔ projects
+- **⚡ Performance** - Ultra-fast SPA with Vite and lazy loading
+- **🎯 SEO-friendly** - Semantic structure and optimized meta tags
+- **🎨 Dark theme** - Modern interface with teal accent
 
-### Build & Deployment
-- **PostCSS** - Traitement CSS avec Autoprefixer
-- **GitHub Pages** - Hébergement statique
-- **Git** - Versioning
+## 🛠️ Tech Stack
+
+### Core
+- **Vite 5.4** - Build tool & dev server with HMR
+- **TailwindCSS 3.4** - Utility-first CSS framework
+- **Vanilla JavaScript (ES6+)** - Component-based modular architecture
 
 ### Architecture
-- **JSON** - Centralisation des données (projets, compétences, timeline)
-- **Modules ES6** - Organisation du code en composants réutilisables
+- **SPA Router** - Client-side navigation without page reload
+- **i18n System** - Manual translation with localized JSON data
+- **Component-based** - Reusable modular structure
+- **Centralized Data** - JSON for projects, skills, and UI
 
-## 📁 Structure du projet
+## 📁 Project Structure
 ```
-portfolio-timothee-pirot/
-├── src/
-│   ├── js/
-│   │   ├── main.js
-│   │   ├── components/       
-│   │   │   ├── Header.js
-│   │   │   ├── Hero.js
-│   │   │   ├── ProjectCard.js
-│   │   │   ├── ProjectGrid.js
-│   │   │   ├── SkillCard.js
-│   │   │   ├── Filter.js
-│   │   │   └── Footer.js
-│   │   └── utils/    (optionnel)
-│   │       ├── dataLoader.js
-│   │       └── helpers.js
-│   ├── styles/
-│   │   └── main.css
-│   ├── data/
-│   │   ├── projects.json
-│   │   ├── skills.json
-│   │   └── timeline.json
-│   └── assets/
-│       └── images/
+.
+├── README.md
 ├── index.html
-├── vite.config.js
-├── tailwind.config.js
+├── package.json
 ├── postcss.config.js
-└── package.json
+├── tailwind.config.js
+├── vite.config.js
+├── public/
+│   ├── assets/
+│   │   ├── icons/
+│   │   └── images/
+│   │       ├── autres/
+│   │       └── projets/
+│   └── documents/
+│       ├── cv-dev-timothee-pirot.pdf
+│       └── cv-robotique-timothee-pirot.pdf
+└── src/
+    ├── data/
+    │   ├── en/                    # English data
+    │   │   ├── projects.json
+    │   │   ├── skills.json
+    │   │   └── ui.json
+    │   ├── fr/                    # French data
+    │   │   ├── projects.json
+    │   │   ├── skills.json
+    │   │   └── ui.json
+    │   ├── navigation.json
+    │   └── profile.json
+    ├── js/
+    │   ├── components/            # Reusable UI components
+    │   │   ├── FeaturedProjects.js
+    │   │   ├── Footer.js
+    │   │   ├── Header.js
+    │   │   ├── Hero.js
+    │   │   ├── ProjectCard.js
+    │   │   ├── ProjectGrid.js
+    │   │   └── SkillsSection.js
+    │   ├── pages/                 # Application pages
+    │   │   ├── About.js
+    │   │   ├── Contact.js
+    │   │   ├── Home.js
+    │   │   ├── ProjectDetail.js
+    │   │   └── Projects.js
+    │   ├── utils/                 # Utilities
+    │   │   ├── Router.js          # SPA routing
+    │   │   └── i18n.js            # Translation system
+    │   └── main.js                # Entry point
+    └── styles/
+        └── main.css
 ```
 
-## 🚀 Installation & Développement
+## 🚀 Installation & Development
 
-### Prérequis
-- Node.js 16+
-- npm 7+
+### Prerequisites
+- **Node.js** >= 18.0.0
+- **npm** >= 9.0.0
 
 ### Installation
 ```bash
-# Cloner le repo
-git clone https://github.com/timothee-pirot/portfolio-timothee-pirot.git
-cd portfolio-timothee-pirot
+# Clone the repository
+git clone https://github.com/timothee-pirot/portfolio.git
+cd portfolio
 
-# Installer les dépendances
+# Install dependencies
 npm install
 
-# Lancer le serveur de développement
+# Start development server
 npm run dev
 ```
 
-Le site sera accessible sur `http://localhost:5173/`
+The site will be available at **http://localhost:5173**
 
-### Scripts disponibles
+### Available Scripts
 ```bash
-npm run dev      # Serveur de développement avec hot reload
-npm run build    # Build de production dans /dist
-npm run preview  # Prévisualiser le build de production
-npm run deploy   # Build + déploiement sur GitHub Pages
+npm run dev      # Development server with HMR (port 5173)
+npm run build    # Production build to /dist
+npm run preview  # Preview production build
+npm run deploy   # Build + automatic deployment to GitHub Pages
 ```
 
-## 🎨 Fonctionnalités
+## 🎨 Customization
 
-- ✅ **Design responsive** - Optimisé mobile, tablette, desktop
-- ✅ **Navigation fluide** - Filtres par catégorie, tags cliquables
-- ✅ **Projets détaillés** - Pages dédiées avec contexte, solution, résultats
-- ✅ **Compétences interactives** - Lien bidirectionnel compétences ↔ projets
-- ✅ **Performance optimisée** - Lazy loading, code splitting
-- ✅ **SEO-friendly** - Meta tags, structure sémantique
+### Modify Colors
 
-## 📝 Personnalisation
-
-### Modifier les couleurs
-
-Éditer `tailwind.config.js` :
+Edit `tailwind.config.js`:
 ```javascript
 theme: {
   extend: {
     colors: {
-      primary: '#3B82F6',    // Couleur principale
-      secondary: '#10B981',  // Couleur secondaire
+      primary: {
+        DEFAULT: '#14b8a6',  // Teal-500
+        dark: '#0d9488',     // Teal-600
+      },
     },
   },
 }
 ```
 
-### Ajouter un projet
+### Add a Project
 
-Éditer `src/data/projects.json` :
+1. Add data to `src/data/en/projects.json` and `src/data/fr/projects.json`
+2. Add images to `public/assets/images/projets/`
+3. The project will automatically appear with slug-based navigation
 ```json
 {
-  "id": "nouveau-projet",
-  "title": "Mon Projet",
+  "id": "my-project",
+  "slug": {
+    "en": "my-project",
+    "fr": "mon-projet"
+  },
+  "title": "My New Project",
   "category": "robotics",
-  "tags": ["CATIA", "Arduino"],
+  "tags": ["ROS2", "Python", "URDF"]
 }
 ```
 
+### Add a Language
+
+1. Create a folder `src/data/de/` (for German, for example)
+2. Copy and translate `projects.json`, `skills.json`, `ui.json`
+3. Add the language to `src/js/utils/i18n.js`
+4. Update slugs in `navigation.json`
+
+## 🎯 Project Goals
+
+This portfolio serves as a technical showcase to:
+- Demonstrate my skills in **modern web development**
+- Present my projects in **robotics and embedded systems**
+- Facilitate the search for a **24-month apprenticeship** starting September 2026
+- Serve as a modern alternative to traditional CVs with focus on concrete achievements
+
 ## 📄 License
 
-MIT License - Libre d'utilisation
+[MIT License](LICENSE) - Free to use and modify
 
 ## 📧 Contact
 
-**Timothée Pirot**
-- GitHub:
-- LinkedIn: 
-- Email:
+**Timothée Pirot** - Engineering Student (Bac+3) @ EPITECH Paris
 
+- 🔗 [Live Portfolio](https://timothee-pirot.github.io/portfolio/)
+- 💼 [LinkedIn](https://linkedin.com/in/timothee-pirot)
+- 📧 [Email](mailto:timothee.pirot@epitech.eu)
+- 🐙 [GitHub](https://github.com/timothee-pirot)
+
+---
+
+💡 **Looking for an apprenticeship** in software development or robotics/automation (24 months, starting Sept. 2026)
